@@ -1,11 +1,17 @@
 {
-	"name": "Sprite5",
+	"name": "Slime_coll",
 	"plugin-id": "Sprite",
-	"sid": 860583729422202,
+	"sid": 575355270728143,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 401816036095191
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -13,35 +19,21 @@
 				"frames": [
 					{
 						"width": 250,
-						"height": 600,
+						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7176676,
-						"useCollisionPoly": true,
-						"duration": 1,
-						"tag": ""
-					},
-					{
-						"width": 250,
-						"height": 600,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "lossless",
-						"exportQuality": 0.8,
-						"fileType": "image/png",
-						"imageSpriteId": 6323021,
+						"imageSpriteId": 1734453,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 554566301239249,
-				"name": "trap",
+				"sid": 317131276847818,
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

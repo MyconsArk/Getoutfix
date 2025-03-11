@@ -1,34 +1,45 @@
 {
-	"name": "Sprite3",
+	"name": "player_coll",
 	"plugin-id": "Sprite",
-	"sid": 534771041650406,
+	"sid": 991374796121132,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 226490954039468
+		},
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 727980525948438
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 64,
+						"height": 80,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9730650,
+						"imageSpriteId": 65832,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 438544581232217,
-				"name": "Animation 1",
-				"isLooping": false,
+				"sid": 467012440715128,
+				"name": "stand",
+				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,

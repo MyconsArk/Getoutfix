@@ -50,6 +50,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "filechooser",
 			"name": "File chooser",
 			"author": "Scirra",
@@ -80,24 +87,25 @@
 	"uniqueId": "kmy227z7sfc",
 	"objectTypes": {
 		"items": [
-			"TiledBackground",
-			"TiledBackground2",
 			"TiledBackground3",
-			"Sprite2",
+			"player",
 			"Keyboard",
-			"Sprite3",
-			"TiledBackground4",
 			"Text",
 			"FileChooser",
 			"Button",
 			"newgame_butt",
 			"New_Game",
-			"Sprite5",
-			"Sprite6",
-			"Sprite7",
+			"trap",
 			"continue_butt",
 			"option_butt",
-			"Mouse"
+			"Mouse",
+			"background1",
+			"background2",
+			"Tilemap",
+			"TiledBackground",
+			"Slime",
+			"player_coll",
+			"Slime_coll"
 		],
 		"subfolders": []
 	},
@@ -204,7 +212,16 @@
 			"subfolders": []
 		},
 		"general": {
-			"items": [],
+			"items": [
+				{
+					"name": "ShinyNoiseBricks2.png",
+					"type": "image/png",
+					"sid": 920136585587817,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		}
 	},
@@ -278,7 +295,7 @@
 		"exportFileStructure": "folders",
 		"uidAllocationMode": "increment"
 	},
-	"viewportWidth": 854,
-	"viewportHeight": 480,
+	"viewportWidth": 1920,
+	"viewportHeight": 1000,
 	"firstLayout": "Main Menu"
 }

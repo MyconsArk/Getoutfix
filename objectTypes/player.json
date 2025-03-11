@@ -1,22 +1,11 @@
 {
-	"name": "Sprite2",
+	"name": "player",
 	"plugin-id": "Sprite",
 	"sid": 253292518476149,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "scrollto",
-			"name": "ScrollTo",
-			"sid": 405230702893667
-		},
-		{
-			"behaviorId": "Platform",
-			"name": "Platform",
-			"sid": 565387183546361
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
