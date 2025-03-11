@@ -1,0 +1,32 @@
+{
+	"name": "ES_Main Menu",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 823386751833747,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "newgame_butt"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 665470570025049,
+					"parameters": {
+						"layout": "Level 1"
+					}
+				}
+			],
+			"sid": 590959469107002
+		}
+	],
+	"sid": 769016604711347
+}

@@ -1,0 +1,10 @@
+{
+	"name": "New_Game",
+	"plugin-id": "Text",
+	"sid": 529194368957071,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

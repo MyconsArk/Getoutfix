@@ -1,0 +1,196 @@
+{
+	"name": "ES_Level 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "Sprite2",
+					"sid": 578839294501889,
+					"behaviorType": "Platform",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite2",
+					"sid": 650938091934808,
+					"parameters": {
+						"animation": "\"stand\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 932965223743050
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "Sprite2",
+					"sid": 193502547573316,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite2",
+					"sid": 866381452927927,
+					"parameters": {
+						"animation": "\"run\"",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 260085724474882
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-jumping",
+					"objectClass": "Sprite2",
+					"sid": 691379064980101,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite2",
+					"sid": 972142450273884,
+					"parameters": {
+						"animation": "\"stand\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 859542060944888
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-falling",
+					"objectClass": "Sprite2",
+					"sid": 262440087848413,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite2",
+					"sid": 500013609888014,
+					"parameters": {
+						"animation": "\"stand\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 912603272784219
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 405706804628287,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Sprite2",
+					"sid": 574887814921190,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 750562090261665
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 677753525518361,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Sprite2",
+					"sid": 781141870697884,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 888639404863235
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite7",
+					"sid": 719787862349761,
+					"parameters": {
+						"object": "Sprite2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Sprite2",
+					"sid": 212391511342052
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 940164427960498
+				}
+			],
+			"sid": 897330730678229
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-outside-layout",
+					"objectClass": "Sprite2",
+					"sid": 306653119132362
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Sprite2",
+					"sid": 753899129928725
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 598424592792602
+				}
+			],
+			"sid": 180329667508829
+		}
+	],
+	"sid": 240398765268806
+}

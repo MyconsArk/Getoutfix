@@ -1,0 +1,9 @@
+{
+	"name": "FileChooser",
+	"plugin-id": "filechooser",
+	"sid": 221622360421628,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

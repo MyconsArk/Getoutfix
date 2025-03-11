@@ -1,0 +1,56 @@
+{
+	"name": "newgame_butt",
+	"plugin-id": "Sprite",
+	"sid": 872625240789664,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 190,
+						"height": 45,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4741139,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0.044444444444444446,
+								1,
+								0.9333333333333333,
+								0.9894736842105263,
+								1,
+								0.005263157894736842,
+								0.9777777777777777,
+								0,
+								0.9333333333333333
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 147783204746879,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
