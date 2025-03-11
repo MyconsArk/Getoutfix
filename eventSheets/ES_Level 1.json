@@ -6,7 +6,7 @@
 			"conditions": [
 				{
 					"id": "is-moving",
-					"objectClass": "Sprite2",
+					"objectClass": "player_coll",
 					"sid": 578839294501889,
 					"behaviorType": "Platform",
 					"isInverted": true
@@ -15,7 +15,7 @@
 			"actions": [
 				{
 					"id": "set-animation",
-					"objectClass": "Sprite2",
+					"objectClass": "player",
 					"sid": 650938091934808,
 					"parameters": {
 						"animation": "\"stand\"",
@@ -30,7 +30,7 @@
 			"conditions": [
 				{
 					"id": "is-moving",
-					"objectClass": "Sprite2",
+					"objectClass": "player_coll",
 					"sid": 193502547573316,
 					"behaviorType": "Platform"
 				}
@@ -38,7 +38,7 @@
 			"actions": [
 				{
 					"id": "set-animation",
-					"objectClass": "Sprite2",
+					"objectClass": "player",
 					"sid": 866381452927927,
 					"parameters": {
 						"animation": "\"run\"",
@@ -53,7 +53,7 @@
 			"conditions": [
 				{
 					"id": "is-jumping",
-					"objectClass": "Sprite2",
+					"objectClass": "player_coll",
 					"sid": 691379064980101,
 					"behaviorType": "Platform"
 				}
@@ -61,7 +61,7 @@
 			"actions": [
 				{
 					"id": "set-animation",
-					"objectClass": "Sprite2",
+					"objectClass": "player",
 					"sid": 972142450273884,
 					"parameters": {
 						"animation": "\"stand\"",
@@ -76,7 +76,7 @@
 			"conditions": [
 				{
 					"id": "is-falling",
-					"objectClass": "Sprite2",
+					"objectClass": "player_coll",
 					"sid": 262440087848413,
 					"behaviorType": "Platform"
 				}
@@ -84,7 +84,7 @@
 			"actions": [
 				{
 					"id": "set-animation",
-					"objectClass": "Sprite2",
+					"objectClass": "player",
 					"sid": 500013609888014,
 					"parameters": {
 						"animation": "\"stand\"",
@@ -109,7 +109,7 @@
 			"actions": [
 				{
 					"id": "set-mirrored",
-					"objectClass": "Sprite2",
+					"objectClass": "player",
 					"sid": 574887814921190,
 					"parameters": {
 						"state": "mirrored"
@@ -133,7 +133,7 @@
 			"actions": [
 				{
 					"id": "set-mirrored",
-					"objectClass": "Sprite2",
+					"objectClass": "player",
 					"sid": 781141870697884,
 					"parameters": {
 						"state": "not-mirrored"
@@ -147,17 +147,17 @@
 			"conditions": [
 				{
 					"id": "on-collision-with-another-object",
-					"objectClass": "Sprite7",
-					"sid": 719787862349761,
+					"objectClass": "trap",
+					"sid": 293822221132097,
 					"parameters": {
-						"object": "Sprite2"
+						"object": "player_coll"
 					}
 				}
 			],
 			"actions": [
 				{
 					"id": "destroy",
-					"objectClass": "Sprite2",
+					"objectClass": "player_coll",
 					"sid": 212391511342052
 				},
 				{
@@ -173,14 +173,14 @@
 			"conditions": [
 				{
 					"id": "is-outside-layout",
-					"objectClass": "Sprite2",
+					"objectClass": "player_coll",
 					"sid": 306653119132362
 				}
 			],
 			"actions": [
 				{
 					"id": "destroy",
-					"objectClass": "Sprite2",
+					"objectClass": "player_coll",
 					"sid": 753899129928725
 				},
 				{
@@ -190,6 +190,32 @@
 				}
 			],
 			"sid": 180329667508829
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player_coll",
+					"sid": 704713294248382,
+					"parameters": {
+						"object": "Slime_coll"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "player_coll",
+					"sid": 797924001110540
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 270144911574456
+				}
+			],
+			"sid": 667501567714222
 		}
 	],
 	"sid": 240398765268806
