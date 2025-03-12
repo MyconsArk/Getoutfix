@@ -1,5 +1,5 @@
 {
-	"name": "Sprite",
+	"name": "pu_option",
 	"plugin-id": "Sprite",
 	"sid": 431471520015897,
 	"isGlobal": false,
@@ -18,15 +18,27 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 603,
+						"height": 427,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5305727,
+						"imageSpriteId": 1746363,
+						"collisionPoly": {
+							"points": [
+								0.024875621890547265,
+								0.00234192037470726,
+								0.9900497512437811,
+								0.0351288056206089,
+								0.9651741293532339,
+								0.9859484777517564,
+								0.001658374792703151,
+								0.955503512880562
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
