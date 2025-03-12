@@ -105,7 +105,8 @@
 			"TiledBackground",
 			"Slime",
 			"player_coll",
-			"Slime_coll"
+			"Slime_coll",
+			"Sprite"
 		],
 		"subfolders": []
 	},
