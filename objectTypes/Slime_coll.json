@@ -10,6 +10,16 @@
 			"behaviorId": "Platform",
 			"name": "Platform",
 			"sid": 401816036095191
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 393252996199260
+		},
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 500210355090527
 		}
 	],
 	"effectTypes": [],
