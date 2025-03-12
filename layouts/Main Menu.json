@@ -7,6 +7,56 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "background1",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 26,
+					"sid": 622974269183696,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 622974269183696,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 3,
+						"y": 2,
+						"width": 1914,
+						"height": 993,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "New_Game",
 					"properties": {
 						"text": "Continue",
@@ -74,8 +124,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 324,
-						"y": 223,
+						"x": 767,
+						"y": 422,
 						"width": 176.5404887777097,
 						"height": 48.80118893961202,
 						"originX": 0,
@@ -159,8 +209,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 414,
-						"y": 158,
+						"x": 857,
+						"y": 357,
 						"width": 249.00000000000003,
 						"height": 64,
 						"originX": 0.5,
@@ -243,8 +293,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 312,
-						"y": 133,
+						"x": 755,
+						"y": 332,
 						"width": 210.5404887777097,
 						"height": 48.80118893961202,
 						"originX": 0,
@@ -328,8 +378,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 415,
-						"y": 246,
+						"x": 858,
+						"y": 445,
 						"width": 249.00000000000003,
 						"height": 64,
 						"originX": 0.5,
@@ -412,8 +462,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 328,
-						"y": 219,
+						"x": 771,
+						"y": 418,
 						"width": 179.5404887777097,
 						"height": 47.80118893961202,
 						"originX": 0,
@@ -497,8 +547,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 417,
-						"y": 331,
+						"x": 860,
+						"y": 530,
 						"width": 249.00000000000003,
 						"height": 64,
 						"originX": 0.5,
@@ -581,8 +631,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 355,
-						"y": 304,
+						"x": 798,
+						"y": 503,
 						"width": 135.5404887777097,
 						"height": 47.80118893961202,
 						"originX": 0,
@@ -616,6 +666,81 @@
 				1
 			],
 			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Pop UP",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Sprite",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 27,
+					"sid": 994919372929059,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 994919372929059,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1181,
+						"y": 642,
+						"width": 211,
+						"height": 180,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 792905302750274,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
