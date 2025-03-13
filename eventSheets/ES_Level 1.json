@@ -240,6 +240,19 @@
 							"id": "destroy",
 							"objectClass": "player_coll",
 							"sid": 731178076618257
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 768497287409562,
+							"parameters": {
+								"object-to-create": "player_coll",
+								"layer": "\"game\"",
+								"x": "290",
+								"y": "828",
+								"create-hierarchy": true,
+								"template-name": "\"\""
+							}
 						}
 					],
 					"sid": 653257198609411
