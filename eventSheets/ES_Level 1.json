@@ -14,6 +14,142 @@
 		{
 			"eventType": "group",
 			"disabled": false,
+			"title": "Collision to player",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 274082418495362,
+							"parameters": {
+								"first-value": "player_coll.HP",
+								"comparison": 2,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "player_coll",
+							"sid": 867648000304164
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 144379235060502,
+							"parameters": {
+								"object-to-create": "player_coll",
+								"layer": "\"game\"",
+								"x": "236",
+								"y": "797",
+								"create-hierarchy": true,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 309197124722621
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "trap",
+							"sid": 382903724908552,
+							"parameters": {
+								"object": "player_coll"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "player_coll",
+							"sid": 668666329018096
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 824013624134628,
+							"parameters": {
+								"object-to-create": "player_coll",
+								"layer": "\"game\"",
+								"x": "236",
+								"y": "797",
+								"create-hierarchy": true,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 763744823451465
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-outside-layout",
+							"objectClass": "player_coll",
+							"sid": 682485229375385
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "player_coll",
+							"sid": 708392592908159
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 710363372258285,
+							"parameters": {
+								"object-to-create": "player_coll",
+								"layer": "\"game\"",
+								"x": "236",
+								"y": "797",
+								"create-hierarchy": true,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 495449267957400
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "player_coll",
+							"sid": 739975036661713,
+							"parameters": {
+								"object": "Slime_coll"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "player_coll",
+							"sid": 901400295905619,
+							"parameters": {
+								"instance-variable": "HP",
+								"value": "player_coll.HP-10"
+							}
+						}
+					],
+					"sid": 328916956837223
+				}
+			],
+			"sid": 188036578610855
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
 			"title": "ControlPlayer",
 			"description": "",
 			"isActiveOnStart": true,
@@ -213,142 +349,6 @@
 				}
 			],
 			"sid": 960899742223959
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Collision to player",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 448355612974113,
-							"parameters": {
-								"first-value": "player_coll.HP",
-								"comparison": 2,
-								"second-value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "player_coll",
-							"sid": 731178076618257
-						},
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 768497287409562,
-							"parameters": {
-								"object-to-create": "player_coll",
-								"layer": "\"game\"",
-								"x": "290",
-								"y": "828",
-								"create-hierarchy": true,
-								"template-name": "\"\""
-							}
-						}
-					],
-					"sid": 653257198609411
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "trap",
-							"sid": 505257416876172,
-							"parameters": {
-								"object": "player_coll"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "player_coll",
-							"sid": 618926611095612
-						},
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 848090018534550,
-							"parameters": {
-								"object-to-create": "player_coll",
-								"layer": "\"game\"",
-								"x": "290",
-								"y": "828",
-								"create-hierarchy": true,
-								"template-name": "\"\""
-							}
-						}
-					],
-					"sid": 389599578286305
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-outside-layout",
-							"objectClass": "player_coll",
-							"sid": 716245235281255
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "player_coll",
-							"sid": 889332965047900
-						},
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 826981831119484,
-							"parameters": {
-								"object-to-create": "player_coll",
-								"layer": "\"game\"",
-								"x": "290",
-								"y": "828",
-								"create-hierarchy": true,
-								"template-name": "\"\""
-							}
-						}
-					],
-					"sid": 105721111762406
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "player_coll",
-							"sid": 824352602636769,
-							"parameters": {
-								"object": "Slime_coll"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-instvar-value",
-							"objectClass": "player_coll",
-							"sid": 343695714004271,
-							"parameters": {
-								"instance-variable": "HP",
-								"value": "player_coll.HP-10"
-							}
-						}
-					],
-					"sid": 958400681687175
-				}
-			],
-			"sid": 829393302828628
 		},
 		{
 			"eventType": "block",
