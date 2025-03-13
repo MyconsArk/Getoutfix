@@ -225,6 +225,29 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 448355612974113,
+							"parameters": {
+								"first-value": "player_coll.HP",
+								"comparison": 2,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "player_coll",
+							"sid": 731178076618257
+						}
+					],
+					"sid": 653257198609411
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "trap",
 							"sid": 505257416876172,
@@ -240,9 +263,17 @@
 							"sid": 618926611095612
 						},
 						{
-							"id": "restart-layout",
+							"id": "create-object",
 							"objectClass": "System",
-							"sid": 316840242618326
+							"sid": 848090018534550,
+							"parameters": {
+								"object-to-create": "player_coll",
+								"layer": "\"game\"",
+								"x": "290",
+								"y": "828",
+								"create-hierarchy": true,
+								"template-name": "\"\""
+							}
 						}
 					],
 					"sid": 389599578286305
@@ -263,9 +294,17 @@
 							"sid": 889332965047900
 						},
 						{
-							"id": "restart-layout",
+							"id": "create-object",
 							"objectClass": "System",
-							"sid": 512796484173013
+							"sid": 826981831119484,
+							"parameters": {
+								"object-to-create": "player_coll",
+								"layer": "\"game\"",
+								"x": "290",
+								"y": "828",
+								"create-hierarchy": true,
+								"template-name": "\"\""
+							}
 						}
 					],
 					"sid": 105721111762406
@@ -284,50 +323,49 @@
 					],
 					"actions": [
 						{
-							"id": "destroy",
+							"id": "set-instvar-value",
 							"objectClass": "player_coll",
-							"sid": 586588356906420
-						},
-						{
-							"id": "restart-layout",
-							"objectClass": "System",
-							"sid": 785002337327387
+							"sid": 343695714004271,
+							"parameters": {
+								"instance-variable": "HP",
+								"value": "player_coll.HP-10"
+							}
 						}
 					],
 					"sid": 958400681687175
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-start-of-layout",
-							"objectClass": "System",
-							"sid": 106083974085990
-						}
-					],
-					"actions": [
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 845230717459302,
-							"parameters": {
-								"layer": "\"pop up\"",
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-time-scale",
-							"objectClass": "System",
-							"sid": 894682892889404,
-							"parameters": {
-								"time-scale": "1.0"
-							}
-						}
-					],
-					"sid": 661871687279547
 				}
 			],
 			"sid": 829393302828628
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 470597506983140
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 838378739510891,
+					"parameters": {
+						"layer": "\"pop up\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 858548489498256,
+					"parameters": {
+						"time-scale": "1.0"
+					}
+				}
+			],
+			"sid": 143291573332825
 		},
 		{
 			"eventType": "block",
@@ -896,6 +934,46 @@
 				}
 			],
 			"sid": 771771768982337
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "HP Bar",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 900695772829384
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "HP_Bar",
+							"sid": 589081531811956,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetWidth",
+								"end-value": "player_coll.HP/player_coll.maxhp*HP_Bar.maxwidth",
+								"time": "0.1",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 142630052704701
+				}
+			],
+			"sid": 212556741729667
 		}
 	],
 	"sid": 240398765268806

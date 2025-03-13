@@ -4,7 +4,22 @@
 	"sid": 991374796121132,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "HP",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 344337669451487
+		},
+		{
+			"name": "maxhp",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 324837096495197
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "scrollto",

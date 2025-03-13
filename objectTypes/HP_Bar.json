@@ -1,0 +1,37 @@
+{
+	"name": "HP_Bar",
+	"plugin-id": "TiledBg",
+	"sid": 905686190024431,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "maxwidth",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 770618276195762
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 543258356817637
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 250,
+		"height": 250,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 9037301,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}
