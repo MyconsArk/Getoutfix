@@ -130,7 +130,8 @@
 			"keluar",
 			"home",
 			"ulang",
-			"flyng_tiles1"
+			"flyng_tiles1",
+			"HP_Bar"
 		],
 		"subfolders": []
 	},
