@@ -42,7 +42,7 @@
 					"world": {
 						"x": 10,
 						"y": -3,
-						"width": 3991,
+						"width": 4125,
 						"height": 995,
 						"originX": 0,
 						"originY": 0,
@@ -252,7 +252,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "TiledBackground",
+					"type": "tilesrock",
 					"properties": {
 						"initially-visible": true,
 						"origin": "top-left",
@@ -349,7 +349,7 @@
 					}
 				},
 				{
-					"type": "TiledBackground",
+					"type": "tilesrock",
 					"properties": {
 						"initially-visible": true,
 						"origin": "top-left",
@@ -701,6 +701,11 @@
 								"default-controls": true,
 								"enabled": true
 							}
+						},
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
 						}
 					},
 					"sceneGraphData": {
@@ -758,8 +763,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 293,
-						"y": 777,
+						"x": 182,
+						"y": 781,
 						"width": 59,
 						"height": 96,
 						"originX": 0.5,
@@ -826,8 +831,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 286,
-						"y": 791,
+						"x": 182,
+						"y": 777,
 						"width": 128,
 						"height": 128,
 						"originX": 0.5,
@@ -877,6 +882,14 @@
 						},
 						"Timer": {
 							"properties": {}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "solids",
+								"range": 1000,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
 						}
 					},
 					"sceneGraphData": {
@@ -934,8 +947,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 2645,
-						"y": 760,
+						"x": 2906,
+						"y": 748,
 						"width": 78,
 						"height": 87,
 						"originX": 0.5,
@@ -963,7 +976,13 @@
 					"sid": 847781375976327,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"ScrollTo": {
+							"properties": {
+								"enabled": false
+							}
+						}
+					},
 					"sceneGraphData": {
 						"parent-uid": 28,
 						"uid": 29,
@@ -1002,12 +1021,69 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 2641,
-						"y": 763,
+						"x": 2902,
+						"y": 757,
 						"width": 95,
 						"height": 104,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "tilesrock",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 25,
+					"sid": 768233469382475,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 768233469382475,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 2451,
+						"y": 505,
+						"width": 154,
+						"height": 316,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,

@@ -30,6 +30,11 @@
 			"behaviorId": "Platform",
 			"name": "Platform",
 			"sid": 727980525948438
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 910596168091609
 		}
 	],
 	"effectTypes": [],
