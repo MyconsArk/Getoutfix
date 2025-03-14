@@ -1,7 +1,7 @@
 {
-	"name": "TiledBackground3",
+	"name": "tilesrock",
 	"plugin-id": "TiledBg",
-	"sid": 167819424175237,
+	"sid": 738894893267213,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -9,20 +9,20 @@
 		{
 			"behaviorId": "solid",
 			"name": "Solid",
-			"sid": 332829960977224
+			"sid": 853955964887823
 		}
 	],
 	"effectTypes": [],
 	"image": {
-		"width": 430,
-		"height": 50,
+		"width": 151,
+		"height": 45,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
 		"fileType": "image/png",
-		"imageSpriteId": 8743655,
+		"imageSpriteId": 1872132,
 		"useCollisionPoly": true,
 		"tag": ""
 	}
