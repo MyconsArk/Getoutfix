@@ -1,48 +1,30 @@
 {
-	"name": "Slime_coll",
+	"name": "Skeleton_coll",
 	"plugin-id": "Sprite",
-	"sid": 575355270728143,
+	"sid": 149096589428002,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [
-		{
-			"name": "hp",
-			"type": "number",
-			"desc": "",
-			"show": true,
-			"sid": 504031830571706
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Platform",
-			"name": "Platform",
-			"sid": 401816036095191
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 434735339761944
 		},
 		{
 			"behaviorId": "Tween",
 			"name": "Tween",
-			"sid": 393252996199260
-		},
-		{
-			"behaviorId": "Timer",
-			"name": "Timer",
-			"sid": 500210355090527
+			"sid": 507472487410068
 		},
 		{
 			"behaviorId": "LOS",
 			"name": "LineOfSight",
-			"sid": 335652760713405
+			"sid": 679902040445078
 		},
 		{
-			"behaviorId": "custom",
-			"name": "Custom",
-			"sid": 287261101907452
-		},
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 953328147677545
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 227240335890370
 		}
 	],
 	"effectTypes": [],
@@ -59,13 +41,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1734453,
+						"imageSpriteId": 8257132,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 317131276847818,
+				"sid": 374205849416732,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

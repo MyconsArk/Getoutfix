@@ -1,7 +1,7 @@
 {
-	"name": "Slime",
+	"name": "Slime_idle",
 	"plugin-id": "Sprite",
-	"sid": 218450801606994,
+	"sid": 296985793917450,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -9,12 +9,12 @@
 		{
 			"behaviorId": "scrollto",
 			"name": "ScrollTo",
-			"sid": 154292511809458
+			"sid": 103963555712900
 		},
 		{
 			"behaviorId": "Flash",
 			"name": "Flash",
-			"sid": 560806134857596
+			"sid": 132895488712823
 		}
 	],
 	"effectTypes": [],
@@ -31,7 +31,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4965978,
+						"imageSpriteId": 6476469,
 						"collisionPoly": {
 							"points": [
 								0.3247232472324723,
@@ -55,7 +55,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 324938922426942,
+				"sid": 858343748211957,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -1,7 +1,7 @@
 {
-	"name": "Slime_coll",
+	"name": "Slime_coll_idle",
 	"plugin-id": "Sprite",
-	"sid": 575355270728143,
+	"sid": 530781932899895,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,39 +10,39 @@
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 504031830571706
+			"sid": 305214059489207
 		}
 	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Platform",
 			"name": "Platform",
-			"sid": 401816036095191
+			"sid": 888872688793872
 		},
 		{
 			"behaviorId": "Tween",
 			"name": "Tween",
-			"sid": 393252996199260
+			"sid": 836907822483199
 		},
 		{
 			"behaviorId": "Timer",
 			"name": "Timer",
-			"sid": 500210355090527
+			"sid": 196725961074333
 		},
 		{
 			"behaviorId": "LOS",
 			"name": "LineOfSight",
-			"sid": 335652760713405
+			"sid": 685326378928993
 		},
 		{
 			"behaviorId": "custom",
 			"name": "Custom",
-			"sid": 287261101907452
+			"sid": 967429597764466
 		},
 		{
 			"behaviorId": "solid",
 			"name": "Solid",
-			"sid": 953328147677545
+			"sid": 171299550217244
 		}
 	],
 	"effectTypes": [],
@@ -59,13 +59,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1734453,
+						"imageSpriteId": 6753716,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 317131276847818,
+				"sid": 766923714645809,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

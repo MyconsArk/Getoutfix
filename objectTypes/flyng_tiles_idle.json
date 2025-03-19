@@ -1,0 +1,78 @@
+{
+	"name": "flyng_tiles_idle",
+	"plugin-id": "Sprite",
+	"sid": 473004016592068,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 361224214224705
+		},
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 874801548510387
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 518698248678789
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 359,
+						"height": 75,
+						"originX": -0.005571030640668524,
+						"originY": 0.3466666666666667,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4060543,
+						"collisionPoly": {
+							"points": [
+								0.022284122562674095,
+								0.013333333333333334,
+								0.9916434540389972,
+								0.14666666666666667,
+								0.9944289693593314,
+								0.38666666666666666,
+								0.9275766016713092,
+								0.7733333333333338,
+								0.8189415041782729,
+								0.9866666666666667,
+								0.6044568245125348,
+								0.9866666666666667,
+								0.1894150417827298,
+								0.9733333333333329,
+								0.07799442896935933,
+								0.706666666666667,
+								0.03899721448467967,
+								0.52
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 326422464150215,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
