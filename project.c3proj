@@ -85,6 +85,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Timer",
 			"name": "Timer",
 			"author": "Scirra",
@@ -162,7 +169,15 @@
 			"Slime_idle",
 			"Slime_coll_idle",
 			"flyng_tiles2",
-			"TrapSlimeSensor"
+			"TrapSlimeSensor",
+			"TiledBackground3",
+			"TiledBackground4",
+			"Gerbang",
+			"TiledBackground6",
+			"teleportwall",
+			"Gerbang2",
+			"torch_fire",
+			"Sprite"
 		],
 		"subfolders": []
 	},
@@ -175,14 +190,18 @@
 	"layouts": {
 		"items": [
 			"Level 1",
-			"Main Menu"
+			"Main Menu",
+			"Level 2",
+			"Intro"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
 			"ES_Level 1",
-			"ES_Main Menu"
+			"ES_Main Menu",
+			"ES_Level 2",
+			"ES_Intro"
 		],
 		"subfolders": []
 	},
