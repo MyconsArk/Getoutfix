@@ -1,50 +1,50 @@
 {
-	"name": "ES_Level 1",
+	"name": "ES_Level 2",
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "JumpStrength",
+			"name": "JumpStrength2",
 			"type": "number",
 			"initialValue": "1400",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 546485322319713
+			"sid": 723931325298208
 		},
 		{
 			"eventType": "variable",
-			"name": "knockbackjump",
+			"name": "knockbackjump2",
 			"type": "number",
 			"initialValue": "450",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 996118697266206
+			"sid": 333097967376862
 		},
 		{
 			"eventType": "variable",
-			"name": "knockbackjumpSK",
+			"name": "knockbackjumpSK2",
 			"type": "number",
 			"initialValue": "250",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 221578917650468
+			"sid": 238339102540593
 		},
 		{
 			"eventType": "variable",
-			"name": "AttackPlayer",
+			"name": "AttackPlayer2",
 			"type": "number",
 			"initialValue": "50",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 669802346319257
+			"sid": 607430192527236
 		},
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Collision to player",
+			"title": "Collision to player2",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -54,7 +54,7 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 274082418495362,
+							"sid": 302015271321053,
 							"parameters": {
 								"first-value": "player_coll.HP",
 								"comparison": 2,
@@ -66,12 +66,12 @@
 						{
 							"id": "destroy",
 							"objectClass": "player_coll",
-							"sid": 867648000304164
+							"sid": 803025829528627
 						},
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 578789907497648,
+							"sid": 796454765894885,
 							"parameters": {
 								"object-to-create": "player_coll",
 								"layer": "\"game\"",
@@ -82,7 +82,7 @@
 							}
 						}
 					],
-					"sid": 309197124722621
+					"sid": 988143410927041
 				},
 				{
 					"eventType": "block",
@@ -90,7 +90,7 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 855065945708039,
+							"sid": 673926025370749,
 							"parameters": {
 								"first-value": "Slime_coll.HP",
 								"comparison": 2,
@@ -102,10 +102,10 @@
 						{
 							"id": "destroy",
 							"objectClass": "Slime_coll",
-							"sid": 179159839409366
+							"sid": 918383913819421
 						}
 					],
-					"sid": 408184566450169
+					"sid": 142549005728927
 				},
 				{
 					"eventType": "block",
@@ -113,7 +113,7 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 421546379969779,
+							"sid": 875418126074203,
 							"parameters": {
 								"first-value": "Slime_coll_idle.HP",
 								"comparison": 2,
@@ -125,10 +125,10 @@
 						{
 							"id": "destroy",
 							"objectClass": "Slime_coll_idle",
-							"sid": 889705087503764
+							"sid": 938938072890924
 						}
 					],
-					"sid": 732122463012860
+					"sid": 126371639690843
 				},
 				{
 					"eventType": "block",
@@ -136,7 +136,7 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 518601491255993,
+							"sid": 229318840684190,
 							"parameters": {
 								"first-value": "Skeleton.HP",
 								"comparison": 2,
@@ -148,10 +148,10 @@
 						{
 							"id": "destroy",
 							"objectClass": "Skeleton_coll",
-							"sid": 610252402075540
+							"sid": 136206062363032
 						}
 					],
-					"sid": 223649951397500
+					"sid": 703435496118818
 				},
 				{
 					"eventType": "block",
@@ -159,7 +159,7 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "trap",
-							"sid": 382903724908552,
+							"sid": 305979604238425,
 							"parameters": {
 								"object": "player_coll"
 							}
@@ -169,23 +169,23 @@
 						{
 							"id": "destroy",
 							"objectClass": "player_coll",
-							"sid": 668666329018096
+							"sid": 498089209665534
 						},
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 824013624134628,
+							"sid": 442869373472890,
 							"parameters": {
 								"object-to-create": "player_coll",
 								"layer": "\"game\"",
-								"x": "236",
-								"y": "797",
+								"x": "140",
+								"y": "302",
 								"create-hierarchy": true,
 								"template-name": "\"\""
 							}
 						}
 					],
-					"sid": 763744823451465
+					"sid": 312867315863694
 				},
 				{
 					"eventType": "block",
@@ -193,30 +193,30 @@
 						{
 							"id": "is-outside-layout",
 							"objectClass": "player_coll",
-							"sid": 682485229375385
+							"sid": 499030335426140
 						}
 					],
 					"actions": [
 						{
 							"id": "destroy",
 							"objectClass": "player_coll",
-							"sid": 708392592908159
+							"sid": 363654519363608
 						},
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 710363372258285,
+							"sid": 793036557153294,
 							"parameters": {
 								"object-to-create": "player_coll",
 								"layer": "\"game\"",
-								"x": "236",
-								"y": "797",
+								"x": "140",
+								"y": "302",
 								"create-hierarchy": true,
 								"template-name": "\"\""
 							}
 						}
 					],
-					"sid": 495449267957400
+					"sid": 770087840410033
 				},
 				{
 					"eventType": "block",
@@ -224,7 +224,7 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "player_coll",
-							"sid": 434269169114864,
+							"sid": 555665786372064,
 							"parameters": {
 								"object": "Slime_coll"
 							}
@@ -234,14 +234,14 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "player_coll",
-							"sid": 363098843706276,
+							"sid": 872322794931167,
 							"parameters": {
 								"instance-variable": "HP",
 								"value": "player_coll.HP-10"
 							}
 						}
 					],
-					"sid": 678079497998855
+					"sid": 185777867283839
 				},
 				{
 					"eventType": "block",
@@ -249,7 +249,7 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "player_coll",
-							"sid": 336591649439213,
+							"sid": 574723173570505,
 							"parameters": {
 								"object": "Slime_coll_idle"
 							}
@@ -259,22 +259,22 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "player_coll",
-							"sid": 987626536697788,
+							"sid": 761677356892418,
 							"parameters": {
 								"instance-variable": "HP",
 								"value": "player_coll.HP-10"
 							}
 						}
 					],
-					"sid": 670534358350612
+					"sid": 834773505806868
 				}
 			],
-			"sid": 188036578610855
+			"sid": 451770240371417
 		},
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Player Attack Damage",
+			"title": "Player Attack Damage2",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -284,7 +284,7 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "PlayerRightHit",
-							"sid": 863934774288221,
+							"sid": 482575003425464,
 							"parameters": {
 								"object": "Slime_coll"
 							}
@@ -292,7 +292,7 @@
 						{
 							"id": "is-animation-playing",
 							"objectClass": "player",
-							"sid": 467996045989156,
+							"sid": 183570785744843,
 							"parameters": {
 								"animation": "\"attack\""
 							}
@@ -302,7 +302,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "Slime_coll",
-							"sid": 132238407143972,
+							"sid": 608379006743514,
 							"parameters": {
 								"instance-variable": "hp",
 								"value": "Slime_coll.HP-40"
@@ -311,7 +311,7 @@
 						{
 							"id": "flash",
 							"objectClass": "Slime",
-							"sid": 123967408482592,
+							"sid": 291831962785407,
 							"behaviorType": "Flash",
 							"parameters": {
 								"on-time": "0.1",
@@ -320,7 +320,7 @@
 							}
 						}
 					],
-					"sid": 786248366641674
+					"sid": 544544556074157
 				},
 				{
 					"eventType": "block",
@@ -328,7 +328,7 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "PlayerRightHit",
-							"sid": 725951635631850,
+							"sid": 363243650612447,
 							"parameters": {
 								"object": "Slime_coll_idle"
 							}
@@ -336,7 +336,7 @@
 						{
 							"id": "is-animation-playing",
 							"objectClass": "player",
-							"sid": 605003054194590,
+							"sid": 637126042976635,
 							"parameters": {
 								"animation": "\"attack\""
 							}
@@ -346,7 +346,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "Slime_coll_idle",
-							"sid": 689734101567072,
+							"sid": 386326812328713,
 							"parameters": {
 								"instance-variable": "hp",
 								"value": "Slime_coll_idle.HP-40"
@@ -355,7 +355,7 @@
 						{
 							"id": "flash",
 							"objectClass": "Slime_idle",
-							"sid": 571913834076426,
+							"sid": 168079344904077,
 							"behaviorType": "Flash",
 							"parameters": {
 								"on-time": "0.1",
@@ -364,7 +364,7 @@
 							}
 						}
 					],
-					"sid": 165077828790552
+					"sid": 364653779777731
 				},
 				{
 					"eventType": "block",
@@ -372,7 +372,7 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "PlayerRightHit",
-							"sid": 639768898478091,
+							"sid": 519862794999666,
 							"parameters": {
 								"object": "Skeleton"
 							}
@@ -380,7 +380,7 @@
 						{
 							"id": "is-animation-playing",
 							"objectClass": "player",
-							"sid": 356704209069700,
+							"sid": 231239292002253,
 							"parameters": {
 								"animation": "\"attack\""
 							}
@@ -390,7 +390,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "Skeleton",
-							"sid": 668782094436136,
+							"sid": 293893835351865,
 							"parameters": {
 								"instance-variable": "hp",
 								"value": "Skeleton.HP-40"
@@ -399,7 +399,7 @@
 						{
 							"id": "flash",
 							"objectClass": "Skeleton",
-							"sid": 667112951896263,
+							"sid": 928572274766967,
 							"behaviorType": "Flash",
 							"parameters": {
 								"on-time": "0.1",
@@ -408,15 +408,15 @@
 							}
 						}
 					],
-					"sid": 856005691382369
+					"sid": 570203195910568
 				}
 			],
-			"sid": 832429792670382
+			"sid": 907124489141817
 		},
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "ControlPlayer",
+			"title": "ControlPlayer2",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -426,14 +426,14 @@
 						{
 							"id": "is-moving",
 							"objectClass": "player_coll",
-							"sid": 717121924361891,
+							"sid": 844890680190961,
 							"behaviorType": "Platform",
 							"isInverted": true
 						},
 						{
 							"id": "is-animation-playing",
 							"objectClass": "player",
-							"sid": 759193462282444,
+							"sid": 581139264912552,
 							"parameters": {
 								"animation": "\"attack\""
 							},
@@ -444,14 +444,14 @@
 						{
 							"id": "set-animation",
 							"objectClass": "player",
-							"sid": 306370754765288,
+							"sid": 508818512152406,
 							"parameters": {
 								"animation": "\"stand\"",
 								"from": "beginning"
 							}
 						}
 					],
-					"sid": 329963779023720
+					"sid": 556678835077226
 				},
 				{
 					"eventType": "block",
@@ -459,7 +459,7 @@
 						{
 							"id": "is-moving",
 							"objectClass": "player_coll",
-							"sid": 568452287867476,
+							"sid": 190679287877870,
 							"behaviorType": "Platform"
 						}
 					],
@@ -467,14 +467,14 @@
 						{
 							"id": "set-animation",
 							"objectClass": "player",
-							"sid": 782726045700586,
+							"sid": 964819659994873,
 							"parameters": {
 								"animation": "\"run\"",
 								"from": "current-frame"
 							}
 						}
 					],
-					"sid": 238041178692863
+					"sid": 608840361564193
 				},
 				{
 					"eventType": "block",
@@ -482,7 +482,7 @@
 						{
 							"id": "is-jumping",
 							"objectClass": "player_coll",
-							"sid": 932195445374632,
+							"sid": 361171787500567,
 							"behaviorType": "Platform"
 						}
 					],
@@ -490,14 +490,14 @@
 						{
 							"id": "set-animation",
 							"objectClass": "player",
-							"sid": 202533066570575,
+							"sid": 146162692380109,
 							"parameters": {
 								"animation": "\"stand\"",
 								"from": "beginning"
 							}
 						}
 					],
-					"sid": 478064665475593
+					"sid": 823930906386454
 				},
 				{
 					"eventType": "block",
@@ -505,7 +505,7 @@
 						{
 							"id": "is-falling",
 							"objectClass": "player_coll",
-							"sid": 520398868271529,
+							"sid": 131721818246620,
 							"behaviorType": "Platform"
 						}
 					],
@@ -513,14 +513,14 @@
 						{
 							"id": "set-animation",
 							"objectClass": "player",
-							"sid": 708824853964053,
+							"sid": 254673943266012,
 							"parameters": {
 								"animation": "\"stand\"",
 								"from": "beginning"
 							}
 						}
 					],
-					"sid": 203199334361365
+					"sid": 972761214370881
 				},
 				{
 					"eventType": "block",
@@ -528,7 +528,7 @@
 						{
 							"id": "key-is-down",
 							"objectClass": "Keyboard",
-							"sid": 436877633233822,
+							"sid": 974574812246522,
 							"parameters": {
 								"key": 65
 							}
@@ -536,7 +536,7 @@
 						{
 							"id": "is-playing",
 							"objectClass": "player_coll",
-							"sid": 355902665538816,
+							"sid": 907635618510186,
 							"behaviorType": "Tween",
 							"parameters": {
 								"tags": "\"knockback\""
@@ -548,7 +548,7 @@
 						{
 							"id": "set-mirrored",
 							"objectClass": "player",
-							"sid": 143683218789924,
+							"sid": 442182841795038,
 							"parameters": {
 								"state": "mirrored"
 							}
@@ -556,14 +556,14 @@
 						{
 							"id": "simulate-control",
 							"objectClass": "player_coll",
-							"sid": 504603309791747,
+							"sid": 285425797934307,
 							"behaviorType": "Platform",
 							"parameters": {
 								"control": "left"
 							}
 						}
 					],
-					"sid": 493240427706523
+					"sid": 571904615870925
 				},
 				{
 					"eventType": "block",
@@ -571,7 +571,7 @@
 						{
 							"id": "key-is-down",
 							"objectClass": "Keyboard",
-							"sid": 968617844434499,
+							"sid": 559687966932548,
 							"parameters": {
 								"key": 68
 							}
@@ -579,7 +579,7 @@
 						{
 							"id": "is-playing",
 							"objectClass": "player_coll",
-							"sid": 474673497084241,
+							"sid": 990826588575266,
 							"behaviorType": "Tween",
 							"parameters": {
 								"tags": "\"knockback\""
@@ -591,7 +591,7 @@
 						{
 							"id": "set-mirrored",
 							"objectClass": "player",
-							"sid": 680330549814874,
+							"sid": 639775564345996,
 							"parameters": {
 								"state": "not-mirrored"
 							}
@@ -599,14 +599,14 @@
 						{
 							"id": "simulate-control",
 							"objectClass": "player_coll",
-							"sid": 969303268478625,
+							"sid": 595651082884642,
 							"behaviorType": "Platform",
 							"parameters": {
 								"control": "right"
 							}
 						}
 					],
-					"sid": 188355504636867
+					"sid": 838087174161376
 				},
 				{
 					"eventType": "block",
@@ -614,7 +614,7 @@
 						{
 							"id": "key-is-down",
 							"objectClass": "Keyboard",
-							"sid": 675273108963023,
+							"sid": 964943165093241,
 							"parameters": {
 								"key": 87
 							}
@@ -622,7 +622,7 @@
 						{
 							"id": "is-playing",
 							"objectClass": "player_coll",
-							"sid": 777657351462856,
+							"sid": 335111144952144,
 							"behaviorType": "Tween",
 							"parameters": {
 								"tags": "\"knockback\""
@@ -634,7 +634,7 @@
 						{
 							"id": "set-jump-strength",
 							"objectClass": "player_coll",
-							"sid": 484553368681524,
+							"sid": 238589088224396,
 							"behaviorType": "Platform",
 							"parameters": {
 								"jump-strength": "JumpStrength"
@@ -643,14 +643,14 @@
 						{
 							"id": "simulate-control",
 							"objectClass": "player_coll",
-							"sid": 524181080224451,
+							"sid": 296525866659878,
 							"behaviorType": "Platform",
 							"parameters": {
 								"control": "jump"
 							}
 						}
 					],
-					"sid": 198250035794345
+					"sid": 542723778832283
 				},
 				{
 					"eventType": "block",
@@ -658,7 +658,7 @@
 						{
 							"id": "on-key-pressed",
 							"objectClass": "Keyboard",
-							"sid": 243552722770184,
+							"sid": 355168261988221,
 							"parameters": {
 								"key": 69
 							}
@@ -668,7 +668,7 @@
 						{
 							"id": "set-animation",
 							"objectClass": "player",
-							"sid": 561982603733709,
+							"sid": 816089057817276,
 							"parameters": {
 								"animation": "\"attack\"",
 								"from": "current-frame"
@@ -677,7 +677,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 652170600392130,
+							"sid": 901749323873195,
 							"parameters": {
 								"seconds": "0.2",
 								"use-timescale": true
@@ -686,171 +686,22 @@
 						{
 							"id": "set-animation",
 							"objectClass": "player",
-							"sid": 200927998816123,
+							"sid": 797258557850771,
 							"parameters": {
 								"animation": "\"stand\"",
 								"from": "beginning"
 							}
 						}
 					],
-					"sid": 498772851186310
+					"sid": 112682842961742
 				}
 			],
-			"sid": 960899742223959
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 470597506983140
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 838378739510891,
-					"parameters": {
-						"layer": "\"pop up\"",
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-time-scale",
-					"objectClass": "System",
-					"sid": 858548489498256,
-					"parameters": {
-						"time-scale": "1.0"
-					}
-				}
-			],
-			"sid": 143291573332825
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 506433477358213,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "pause"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 823122215183674,
-					"parameters": {
-						"layer": "\"pop up\"",
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-time-scale",
-					"objectClass": "System",
-					"sid": 609168624546293,
-					"parameters": {
-						"time-scale": "0"
-					}
-				}
-			],
-			"sid": 659311938348871
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 526463535505142,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "keluar"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 980580826998233,
-					"parameters": {
-						"layer": "\"pop up\"",
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-time-scale",
-					"objectClass": "System",
-					"sid": 902947621708880,
-					"parameters": {
-						"time-scale": "1.0"
-					}
-				}
-			],
-			"sid": 705023250510498
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 370247099917815,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "ulang"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "restart-layout",
-					"objectClass": "System",
-					"sid": 681611474790008
-				}
-			],
-			"sid": 451979653633191
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 716805384749953,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "home"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 842297943124877,
-					"parameters": {
-						"layout": "Main Menu"
-					}
-				}
-			],
-			"sid": 541726974732474
+			"sid": 213779486323340
 		},
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "flyingtiles 1 moving",
+			"title": "UI",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -858,53 +709,158 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-created",
-							"objectClass": "flyng_tiles1",
-							"sid": 501882135869463
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 201410686485757
 						}
 					],
-					"actions": [],
-					"sid": 130842988456535
-				},
-				{
-					"eventType": "block",
-					"conditions": [],
 					"actions": [
 						{
-							"id": "simulate-control",
-							"objectClass": "flyng_tiles1",
-							"sid": 264250307402903,
-							"behaviorType": "Platform",
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 735268000976381,
 							"parameters": {
-								"control": "right"
+								"layer": "\"pop up\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-time-scale",
+							"objectClass": "System",
+							"sid": 501593569166780,
+							"parameters": {
+								"time-scale": "1.0"
 							}
 						}
 					],
-					"sid": 104639901721067
+					"sid": 301157497399640
 				},
 				{
 					"eventType": "block",
-					"conditions": [],
-					"actions": [
+					"conditions": [
 						{
-							"id": "simulate-control",
-							"objectClass": "flyng_tiles1",
-							"sid": 677243839914839,
-							"behaviorType": "Platform",
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 377422523663039,
 							"parameters": {
-								"control": "left"
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "pause"
 							}
 						}
 					],
-					"sid": 799671687197851
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 854629634162716,
+							"parameters": {
+								"layer": "\"pop up\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-time-scale",
+							"objectClass": "System",
+							"sid": 524483352396853,
+							"parameters": {
+								"time-scale": "0"
+							}
+						}
+					],
+					"sid": 731014703214451
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 545262577416525,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "keluar"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 287581928157726,
+							"parameters": {
+								"layer": "\"pop up\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-time-scale",
+							"objectClass": "System",
+							"sid": 130778126476192,
+							"parameters": {
+								"time-scale": "1.0"
+							}
+						}
+					],
+					"sid": 497960420295222
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 962970902273635,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "ulang"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 444981261112192
+						}
+					],
+					"sid": 746025344264424
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 599806560529693,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "home"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 731423032594554,
+							"parameters": {
+								"layout": "Main Menu"
+							}
+						}
+					],
+					"sid": 912027856572360
 				}
 			],
-			"sid": 968918117263899
+			"sid": 919483845342955
 		},
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "flyingtiles 2 moving",
+			"title": "flyingtiles 1 moving2",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -914,14 +870,14 @@
 						{
 							"id": "on-created",
 							"objectClass": "flyng_tiles2",
-							"sid": 789956873115620
+							"sid": 916958137989117
 						}
 					],
 					"actions": [
 						{
 							"id": "tween-value",
 							"objectClass": "flyng_tiles2",
-							"sid": 549131936492699,
+							"sid": 178389359111742,
 							"behaviorType": "Tween",
 							"parameters": {
 								"tags": "\"TimeToRight\"",
@@ -936,7 +892,7 @@
 							}
 						}
 					],
-					"sid": 393143114077693
+					"sid": 592375019697452
 				},
 				{
 					"eventType": "block",
@@ -944,7 +900,7 @@
 						{
 							"id": "is-playing",
 							"objectClass": "flyng_tiles2",
-							"sid": 782491285078195,
+							"sid": 732793114189626,
 							"behaviorType": "Tween",
 							"parameters": {
 								"tags": "\"TimeToRight\""
@@ -955,14 +911,14 @@
 						{
 							"id": "simulate-control",
 							"objectClass": "flyng_tiles2",
-							"sid": 934027501143664,
+							"sid": 901089398807472,
 							"behaviorType": "Platform",
 							"parameters": {
 								"control": "right"
 							}
 						}
 					],
-					"sid": 122233014732336
+					"sid": 196030641070216
 				},
 				{
 					"eventType": "block",
@@ -970,7 +926,7 @@
 						{
 							"id": "on-tweens-finished",
 							"objectClass": "flyng_tiles2",
-							"sid": 408344173501995,
+							"sid": 347293013006535,
 							"behaviorType": "Tween",
 							"parameters": {
 								"tags": "\"TimeToRight\""
@@ -981,7 +937,7 @@
 						{
 							"id": "tween-value",
 							"objectClass": "flyng_tiles2",
-							"sid": 633397280432534,
+							"sid": 472953347880014,
 							"behaviorType": "Tween",
 							"parameters": {
 								"tags": "\"TimeToLeft\"",
@@ -996,7 +952,7 @@
 							}
 						}
 					],
-					"sid": 612379549940162
+					"sid": 682324071920637
 				},
 				{
 					"eventType": "block",
@@ -1004,7 +960,7 @@
 						{
 							"id": "is-playing",
 							"objectClass": "flyng_tiles2",
-							"sid": 626819862570839,
+							"sid": 524962699389650,
 							"behaviorType": "Tween",
 							"parameters": {
 								"tags": "\"TimeToLeft\""
@@ -1015,14 +971,14 @@
 						{
 							"id": "simulate-control",
 							"objectClass": "flyng_tiles2",
-							"sid": 840023389268142,
+							"sid": 640425418492878,
 							"behaviorType": "Platform",
 							"parameters": {
 								"control": "left"
 							}
 						}
 					],
-					"sid": 837025036822551
+					"sid": 222416918902554
 				},
 				{
 					"eventType": "block",
@@ -1030,7 +986,7 @@
 						{
 							"id": "on-tweens-finished",
 							"objectClass": "flyng_tiles2",
-							"sid": 239375718335783,
+							"sid": 236252895969989,
 							"behaviorType": "Tween",
 							"parameters": {
 								"tags": "\"TimeToLeft\""
@@ -1041,7 +997,7 @@
 						{
 							"id": "tween-value",
 							"objectClass": "flyng_tiles2",
-							"sid": 136681240927066,
+							"sid": 935549217084832,
 							"behaviorType": "Tween",
 							"parameters": {
 								"tags": "\"TimeToRight\"",
@@ -1056,15 +1012,175 @@
 							}
 						}
 					],
-					"sid": 589309824779489
+					"sid": 660763196815537
 				}
 			],
-			"sid": 652055736013127
+			"sid": 684132763297875
 		},
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "HP Bar",
+			"title": "flyingtiles 2 moving2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "flyng_tiles2",
+							"sid": 207678471348292
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-value",
+							"objectClass": "flyng_tiles2",
+							"sid": 697609639409392,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"TimeToRight\"",
+								"start-value": "0",
+								"end-value": "1",
+								"time": "1",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 649903514617573
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-playing",
+							"objectClass": "flyng_tiles2",
+							"sid": 383150737167464,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"TimeToRight\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "flyng_tiles2",
+							"sid": 707861429793679,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "right"
+							}
+						}
+					],
+					"sid": 362761907516529
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "flyng_tiles2",
+							"sid": 515406885206258,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"TimeToRight\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-value",
+							"objectClass": "flyng_tiles2",
+							"sid": 684948989653417,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"TimeToLeft\"",
+								"start-value": "0",
+								"end-value": "1",
+								"time": "1",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 358313545374320
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-playing",
+							"objectClass": "flyng_tiles2",
+							"sid": 458459432364732,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"TimeToLeft\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "flyng_tiles2",
+							"sid": 591469498288667,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "left"
+							}
+						}
+					],
+					"sid": 611130465862292
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "flyng_tiles2",
+							"sid": 442514162994956,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"TimeToLeft\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-value",
+							"objectClass": "flyng_tiles2",
+							"sid": 793744859953106,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"TimeToRight\"",
+								"start-value": "0",
+								"end-value": "1",
+								"time": "1",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 970615312482294
+				}
+			],
+			"sid": 450878925339236
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "HP Bar2",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -1074,14 +1190,14 @@
 						{
 							"id": "every-tick",
 							"objectClass": "System",
-							"sid": 900695772829384
+							"sid": 162808359992817
 						}
 					],
 					"actions": [
 						{
 							"id": "tween-one-property",
 							"objectClass": "HP_Bar",
-							"sid": 589081531811956,
+							"sid": 724270807386213,
 							"behaviorType": "Tween",
 							"parameters": {
 								"tags": "\"\"",
@@ -1096,22 +1212,22 @@
 							}
 						}
 					],
-					"sid": 142630052704701
+					"sid": 797703322405724
 				}
 			],
-			"sid": 212556741729667
+			"sid": 328711231420711
 		},
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Skeleton Behavour",
+			"title": "Skeleton Behavour2",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
 				{
 					"eventType": "group",
 					"disabled": false,
-					"title": "Skeleton movement",
+					"title": "Skeleton movement2",
 					"description": "",
 					"isActiveOnStart": true,
 					"children": [
@@ -1121,14 +1237,14 @@
 								{
 									"id": "on-created",
 									"objectClass": "Skeleton_coll",
-									"sid": 178563087620942
+									"sid": 323844962047605
 								}
 							],
 							"actions": [
 								{
 									"id": "tween-value",
 									"objectClass": "Skeleton_coll",
-									"sid": 421298290676006,
+									"sid": 409359642608041,
 									"behaviorType": "Tween",
 									"parameters": {
 										"tags": "\"SlimeTimeToRightSK\"",
@@ -1143,7 +1259,7 @@
 									}
 								}
 							],
-							"sid": 371418435357950
+							"sid": 328356139257839
 						},
 						{
 							"eventType": "block",
@@ -1151,7 +1267,7 @@
 								{
 									"id": "on-tweens-finished",
 									"objectClass": "Skeleton_coll",
-									"sid": 780774432547506,
+									"sid": 956612970071656,
 									"behaviorType": "Tween",
 									"parameters": {
 										"tags": "\"SlimeTimeToRightSK\""
@@ -1162,7 +1278,7 @@
 								{
 									"id": "tween-value",
 									"objectClass": "Skeleton_coll",
-									"sid": 982571374694928,
+									"sid": 391883562659983,
 									"behaviorType": "Tween",
 									"parameters": {
 										"tags": "\"SlimeMoveRightSK\"",
@@ -1177,7 +1293,7 @@
 									}
 								}
 							],
-							"sid": 801020087657538
+							"sid": 127483745375531
 						},
 						{
 							"eventType": "block",
@@ -1185,7 +1301,7 @@
 								{
 									"id": "is-playing",
 									"objectClass": "Skeleton_coll",
-									"sid": 956061678338188,
+									"sid": 568014159550361,
 									"behaviorType": "Tween",
 									"parameters": {
 										"tags": "\"SlimeMoveRightSK\""
@@ -1196,14 +1312,14 @@
 								{
 									"id": "simulate-control",
 									"objectClass": "Skeleton_coll",
-									"sid": 579202032955086,
+									"sid": 601995864202408,
 									"behaviorType": "Platform",
 									"parameters": {
 										"control": "right"
 									}
 								}
 							],
-							"sid": 599666702220607
+							"sid": 273772199535380
 						},
 						{
 							"eventType": "block",
@@ -1211,7 +1327,7 @@
 								{
 									"id": "on-tweens-finished",
 									"objectClass": "Skeleton_coll",
-									"sid": 134781409344849,
+									"sid": 160095261500870,
 									"behaviorType": "Tween",
 									"parameters": {
 										"tags": "\"SlimeMoveRightSK\""
@@ -1222,7 +1338,7 @@
 								{
 									"id": "tween-value",
 									"objectClass": "Skeleton_coll",
-									"sid": 851753322869468,
+									"sid": 229477195012826,
 									"behaviorType": "Tween",
 									"parameters": {
 										"tags": "\"SlimeTimeToLeftSK\"",
@@ -1237,7 +1353,7 @@
 									}
 								}
 							],
-							"sid": 772765490101258
+							"sid": 987616087543351
 						},
 						{
 							"eventType": "block",
@@ -1245,7 +1361,7 @@
 								{
 									"id": "on-tweens-finished",
 									"objectClass": "Skeleton_coll",
-									"sid": 622360180661225,
+									"sid": 244400729485207,
 									"behaviorType": "Tween",
 									"parameters": {
 										"tags": "\"SlimeTimeToLeftSK\""
@@ -1256,7 +1372,7 @@
 								{
 									"id": "tween-value",
 									"objectClass": "Skeleton_coll",
-									"sid": 578198787699496,
+									"sid": 445178393899269,
 									"behaviorType": "Tween",
 									"parameters": {
 										"tags": "\"SlimeMoveLeftSK\"",
@@ -1271,7 +1387,7 @@
 									}
 								}
 							],
-							"sid": 334738141608726
+							"sid": 704155320467754
 						},
 						{
 							"eventType": "block",
@@ -1279,7 +1395,7 @@
 								{
 									"id": "is-playing",
 									"objectClass": "Skeleton_coll",
-									"sid": 295997087561085,
+									"sid": 994503153665133,
 									"behaviorType": "Tween",
 									"parameters": {
 										"tags": "\"SlimeMoveLeftSK\""
@@ -1290,14 +1406,14 @@
 								{
 									"id": "simulate-control",
 									"objectClass": "Skeleton_coll",
-									"sid": 616455679538680,
+									"sid": 637837354838978,
 									"behaviorType": "Platform",
 									"parameters": {
 										"control": "left"
 									}
 								}
 							],
-							"sid": 607262380419255
+							"sid": 573090610130174
 						},
 						{
 							"eventType": "block",
@@ -1305,7 +1421,7 @@
 								{
 									"id": "on-tweens-finished",
 									"objectClass": "Skeleton_coll",
-									"sid": 336653537579596,
+									"sid": 530122831062471,
 									"behaviorType": "Tween",
 									"parameters": {
 										"tags": "\"SlimeMoveLeftSK\""
@@ -1316,7 +1432,7 @@
 								{
 									"id": "tween-value",
 									"objectClass": "Skeleton_coll",
-									"sid": 433570015654487,
+									"sid": 883610807443998,
 									"behaviorType": "Tween",
 									"parameters": {
 										"tags": "\"SlimeTimeToRightSK\"",
@@ -1331,15 +1447,15 @@
 									}
 								}
 							],
-							"sid": 173945358789198
+							"sid": 290907901301148
 						}
 					],
-					"sid": 928604654524525
+					"sid": 882502681854542
 				},
 				{
 					"eventType": "group",
 					"disabled": false,
-					"title": "Skeleton Chasing",
+					"title": "Skeleton Chasing2",
 					"description": "",
 					"isActiveOnStart": true,
 					"children": [
@@ -1349,7 +1465,7 @@
 								{
 									"id": "has-los-to-object",
 									"objectClass": "Skeleton_coll",
-									"sid": 384942017253547,
+									"sid": 919868008807193,
 									"behaviorType": "LineOfSight",
 									"parameters": {
 										"object": "player_coll",
@@ -1359,7 +1475,7 @@
 								{
 									"id": "is-timer-running",
 									"objectClass": "Skeleton_coll",
-									"sid": 736913621531328,
+									"sid": 698677242277710,
 									"behaviorType": "Timer",
 									"parameters": {
 										"tag": "\"SlimeAttackDelaySK\""
@@ -1368,7 +1484,7 @@
 								}
 							],
 							"actions": [],
-							"sid": 435485398369502,
+							"sid": 344311930997761,
 							"children": [
 								{
 									"eventType": "block",
@@ -1376,7 +1492,7 @@
 										{
 											"id": "compare-two-values",
 											"objectClass": "System",
-											"sid": 103197995198871,
+											"sid": 588751575541493,
 											"parameters": {
 												"first-value": "player_coll.X",
 												"comparison": 2,
@@ -1388,14 +1504,14 @@
 										{
 											"id": "simulate-control",
 											"objectClass": "Skeleton_coll",
-											"sid": 590233697620741,
+											"sid": 834405542262219,
 											"behaviorType": "Platform",
 											"parameters": {
 												"control": "left"
 											}
 										}
 									],
-									"sid": 954685119314205
+									"sid": 269486262650251
 								},
 								{
 									"eventType": "block",
@@ -1403,7 +1519,7 @@
 										{
 											"id": "compare-two-values",
 											"objectClass": "System",
-											"sid": 729379072778218,
+											"sid": 806277159464806,
 											"parameters": {
 												"first-value": "player_coll.X",
 												"comparison": 4,
@@ -1415,24 +1531,24 @@
 										{
 											"id": "simulate-control",
 											"objectClass": "Skeleton_coll",
-											"sid": 472840807732481,
+											"sid": 613053628831592,
 											"behaviorType": "Platform",
 											"parameters": {
 												"control": "right"
 											}
 										}
 									],
-									"sid": 319835284042336
+									"sid": 753076911093951
 								}
 							]
 						}
 					],
-					"sid": 950872040179876
+					"sid": 795422935662851
 				},
 				{
 					"eventType": "group",
 					"disabled": false,
-					"title": "Knockback Skeleton",
+					"title": "Knockback Skeleton2",
 					"description": "",
 					"isActiveOnStart": true,
 					"children": [
@@ -1442,7 +1558,7 @@
 								{
 									"id": "on-collision-with-another-object",
 									"objectClass": "Skeleton_coll",
-									"sid": 282622997673884,
+									"sid": 192605663655861,
 									"parameters": {
 										"object": "player_coll"
 									}
@@ -1450,7 +1566,7 @@
 								{
 									"id": "is-playing",
 									"objectClass": "player_coll",
-									"sid": 383701500963577,
+									"sid": 889104101670318,
 									"behaviorType": "Tween",
 									"parameters": {
 										"tags": "\"SlimeAttCooldown\""
@@ -1462,7 +1578,7 @@
 								{
 									"id": "tween-value",
 									"objectClass": "player_coll",
-									"sid": 474646781948833,
+									"sid": 458425618708939,
 									"behaviorType": "Tween",
 									"parameters": {
 										"tags": "\"SlimeAttCooldown\"",
@@ -1479,7 +1595,7 @@
 								{
 									"id": "start-timer",
 									"objectClass": "Skeleton_coll",
-									"sid": 449328797365214,
+									"sid": 205011151021983,
 									"behaviorType": "Timer",
 									"parameters": {
 										"duration": "0.8",
@@ -1488,7 +1604,7 @@
 									}
 								}
 							],
-							"sid": 373765140054689,
+							"sid": 755784291756487,
 							"children": [
 								{
 									"eventType": "block",
@@ -1496,7 +1612,7 @@
 										{
 											"id": "compare-x",
 											"objectClass": "Skeleton_coll",
-											"sid": 781263234483093,
+											"sid": 673193273506699,
 											"parameters": {
 												"comparison": 2,
 												"x-co-ordinate": "player_coll.X"
@@ -1507,7 +1623,7 @@
 										{
 											"id": "wait",
 											"objectClass": "System",
-											"sid": 830584261298654,
+											"sid": 617892506918792,
 											"parameters": {
 												"seconds": "0.5",
 												"use-timescale": true
@@ -1516,7 +1632,7 @@
 										{
 											"id": "set-jump-strength",
 											"objectClass": "player_coll",
-											"sid": 536132066031176,
+											"sid": 404399682432817,
 											"behaviorType": "Platform",
 											"parameters": {
 												"jump-strength": "knockbackjumpSK"
@@ -1525,7 +1641,7 @@
 										{
 											"id": "set-mirrored",
 											"objectClass": "Skeleton",
-											"sid": 365489040908390,
+											"sid": 721563139153697,
 											"parameters": {
 												"state": "not-mirrored"
 											}
@@ -1533,7 +1649,7 @@
 										{
 											"id": "set-animation",
 											"objectClass": "Skeleton",
-											"sid": 928120659209903,
+											"sid": 760459975687230,
 											"parameters": {
 												"animation": "\"attack\"",
 												"from": "beginning"
@@ -1542,7 +1658,7 @@
 										{
 											"id": "simulate-control",
 											"objectClass": "player_coll",
-											"sid": 270643485757143,
+											"sid": 761729362628976,
 											"behaviorType": "Platform",
 											"parameters": {
 												"control": "jump"
@@ -1551,7 +1667,7 @@
 										{
 											"id": "tween-one-property",
 											"objectClass": "player_coll",
-											"sid": 820170091704845,
+											"sid": 216785353555682,
 											"behaviorType": "Tween",
 											"parameters": {
 												"tags": "\"knockback\"",
@@ -1568,7 +1684,7 @@
 										{
 											"id": "set-instvar-value",
 											"objectClass": "player_coll",
-											"sid": 747473468090540,
+											"sid": 415249215103498,
 											"parameters": {
 												"instance-variable": "HP",
 												"value": "player_coll.HP-20"
@@ -1577,7 +1693,7 @@
 										{
 											"id": "wait",
 											"objectClass": "System",
-											"sid": 621973334865806,
+											"sid": 542122981804936,
 											"parameters": {
 												"seconds": "0.5",
 												"use-timescale": true
@@ -1586,14 +1702,14 @@
 										{
 											"id": "set-animation",
 											"objectClass": "Skeleton",
-											"sid": 223002823016436,
+											"sid": 459620458657480,
 											"parameters": {
 												"animation": "\"idle\"",
 												"from": "beginning"
 											}
 										}
 									],
-									"sid": 781213387565148
+									"sid": 557848422618075
 								},
 								{
 									"eventType": "block",
@@ -1601,7 +1717,7 @@
 										{
 											"id": "compare-x",
 											"objectClass": "Skeleton_coll",
-											"sid": 709195227212366,
+											"sid": 670327220079222,
 											"parameters": {
 												"comparison": 4,
 												"x-co-ordinate": "player_coll.X"
@@ -1612,7 +1728,7 @@
 										{
 											"id": "wait",
 											"objectClass": "System",
-											"sid": 365271184356218,
+											"sid": 375023698279417,
 											"parameters": {
 												"seconds": "0.5",
 												"use-timescale": true
@@ -1621,7 +1737,7 @@
 										{
 											"id": "set-jump-strength",
 											"objectClass": "player_coll",
-											"sid": 893008228959870,
+											"sid": 603411921843424,
 											"behaviorType": "Platform",
 											"parameters": {
 												"jump-strength": "knockbackjumpSK"
@@ -1630,7 +1746,7 @@
 										{
 											"id": "set-mirrored",
 											"objectClass": "Skeleton",
-											"sid": 197700272026100,
+											"sid": 564625801409876,
 											"parameters": {
 												"state": "mirrored"
 											}
@@ -1638,7 +1754,7 @@
 										{
 											"id": "set-animation",
 											"objectClass": "Skeleton",
-											"sid": 675847232717502,
+											"sid": 116405328084192,
 											"parameters": {
 												"animation": "\"attack\"",
 												"from": "beginning"
@@ -1647,7 +1763,7 @@
 										{
 											"id": "simulate-control",
 											"objectClass": "player_coll",
-											"sid": 427647061329455,
+											"sid": 266222446210580,
 											"behaviorType": "Platform",
 											"parameters": {
 												"control": "jump"
@@ -1656,7 +1772,7 @@
 										{
 											"id": "tween-one-property",
 											"objectClass": "player_coll",
-											"sid": 243719269306781,
+											"sid": 344566723262792,
 											"behaviorType": "Tween",
 											"parameters": {
 												"tags": "\"knockback\"",
@@ -1673,7 +1789,7 @@
 										{
 											"id": "set-instvar-value",
 											"objectClass": "player_coll",
-											"sid": 566131551243091,
+											"sid": 299575403804820,
 											"parameters": {
 												"instance-variable": "HP",
 												"value": "player_coll.HP-20"
@@ -1682,7 +1798,7 @@
 										{
 											"id": "wait",
 											"objectClass": "System",
-											"sid": 175668566383182,
+											"sid": 449001457343919,
 											"parameters": {
 												"seconds": "0.5",
 												"use-timescale": true
@@ -1691,19 +1807,19 @@
 										{
 											"id": "set-animation",
 											"objectClass": "Skeleton",
-											"sid": 591580762061300,
+											"sid": 498496887282719,
 											"parameters": {
 												"animation": "\"idle\"",
 												"from": "beginning"
 											}
 										}
 									],
-									"sid": 275132396193702
+									"sid": 233157980541732
 								}
 							]
 						}
 					],
-					"sid": 494365325432324
+					"sid": 801856873554035
 				},
 				{
 					"eventType": "block",
@@ -1711,7 +1827,7 @@
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "Skeleton",
-							"sid": 516304772679395,
+							"sid": 739078552031431,
 							"parameters": {
 								"object": "player"
 							}
@@ -1721,7 +1837,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 811435334845360,
+							"sid": 329149097420798,
 							"parameters": {
 								"seconds": "0.5",
 								"use-timescale": true
@@ -1730,7 +1846,7 @@
 						{
 							"id": "set-jump-strength",
 							"objectClass": "player_coll",
-							"sid": 154012527171782,
+							"sid": 105834705463274,
 							"behaviorType": "Platform",
 							"parameters": {
 								"jump-strength": "knockbackjumpSK"
@@ -1739,7 +1855,7 @@
 						{
 							"id": "set-animation",
 							"objectClass": "Skeleton",
-							"sid": 212665715008079,
+							"sid": 311415968906715,
 							"parameters": {
 								"animation": "\"attack\"",
 								"from": "beginning"
@@ -1748,7 +1864,7 @@
 						{
 							"id": "simulate-control",
 							"objectClass": "player_coll",
-							"sid": 362304460542172,
+							"sid": 632758337887152,
 							"behaviorType": "Platform",
 							"parameters": {
 								"control": "jump"
@@ -1757,7 +1873,7 @@
 						{
 							"id": "tween-one-property",
 							"objectClass": "player_coll",
-							"sid": 487814304424432,
+							"sid": 424511680898533,
 							"behaviorType": "Tween",
 							"parameters": {
 								"tags": "\"knockback\"",
@@ -1774,7 +1890,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 278515293354311,
+							"sid": 769879404518081,
 							"parameters": {
 								"seconds": "0.5",
 								"use-timescale": true
@@ -1783,29 +1899,29 @@
 						{
 							"id": "set-animation",
 							"objectClass": "Skeleton",
-							"sid": 657595062385715,
+							"sid": 189435289420658,
 							"parameters": {
 								"animation": "\"idle\"",
 								"from": "beginning"
 							}
 						}
 					],
-					"sid": 568043964547281
+					"sid": 288921506461027
 				}
 			],
-			"sid": 739130204252733
+			"sid": 699835187639279
 		},
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Slime  ",
+			"title": "Slime  2",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
 				{
 					"eventType": "group",
 					"disabled": false,
-					"title": "Slime 1 Behaviour ",
+					"title": "Slime 1 Behaviour 2",
 					"description": "",
 					"isActiveOnStart": true,
 					"children": [
@@ -1815,7 +1931,7 @@
 								{
 									"id": "is-on-floor",
 									"objectClass": "Slime_coll",
-									"sid": 855838753803324,
+									"sid": 967182020533542,
 									"behaviorType": "Platform"
 								}
 							],
@@ -1823,19 +1939,19 @@
 								{
 									"id": "simulate-control",
 									"objectClass": "Slime_coll",
-									"sid": 342754533524244,
+									"sid": 416161601901626,
 									"behaviorType": "Platform",
 									"parameters": {
 										"control": "jump"
 									}
 								}
 							],
-							"sid": 632057582109052
+							"sid": 830579478443470
 						},
 						{
 							"eventType": "group",
 							"disabled": false,
-							"title": "Slime 1 movement",
+							"title": "Slime 1 movement2",
 							"description": "",
 							"isActiveOnStart": true,
 							"children": [
@@ -1845,14 +1961,14 @@
 										{
 											"id": "on-created",
 											"objectClass": "Slime_coll",
-											"sid": 364406590320340
+											"sid": 110708014981043
 										}
 									],
 									"actions": [
 										{
 											"id": "tween-value",
 											"objectClass": "Slime_coll",
-											"sid": 815815241991098,
+											"sid": 229289988922918,
 											"behaviorType": "Tween",
 											"parameters": {
 												"tags": "\"SlimeTimeToRight\"",
@@ -1867,7 +1983,7 @@
 											}
 										}
 									],
-									"sid": 193550010693942
+									"sid": 329487329349926
 								},
 								{
 									"eventType": "block",
@@ -1875,7 +1991,7 @@
 										{
 											"id": "on-tweens-finished",
 											"objectClass": "Slime_coll",
-											"sid": 455055162161456,
+											"sid": 965045825028082,
 											"behaviorType": "Tween",
 											"parameters": {
 												"tags": "\"SlimeTimeToRight\""
@@ -1886,7 +2002,7 @@
 										{
 											"id": "tween-value",
 											"objectClass": "Slime_coll",
-											"sid": 843913277279211,
+											"sid": 963797372956578,
 											"behaviorType": "Tween",
 											"parameters": {
 												"tags": "\"SlimeMoveRight\"",
@@ -1903,7 +2019,7 @@
 										{
 											"id": "start-timer",
 											"objectClass": "Slime_coll",
-											"sid": 857521960944757,
+											"sid": 312497843014031,
 											"disabled": true,
 											"behaviorType": "Timer",
 											"parameters": {
@@ -1913,7 +2029,7 @@
 											}
 										}
 									],
-									"sid": 729890879290000
+									"sid": 348824550511181
 								},
 								{
 									"eventType": "block",
@@ -1921,7 +2037,7 @@
 										{
 											"id": "is-playing",
 											"objectClass": "Slime_coll",
-											"sid": 346719301216519,
+											"sid": 790051833618901,
 											"behaviorType": "Tween",
 											"parameters": {
 												"tags": "\"SlimeMoveRight\""
@@ -1932,14 +2048,14 @@
 										{
 											"id": "simulate-control",
 											"objectClass": "Slime_coll",
-											"sid": 106082637081836,
+											"sid": 516635535885323,
 											"behaviorType": "Platform",
 											"parameters": {
 												"control": "right"
 											}
 										}
 									],
-									"sid": 491645832451107
+									"sid": 389038529893325
 								},
 								{
 									"eventType": "block",
@@ -1947,7 +2063,7 @@
 										{
 											"id": "on-tweens-finished",
 											"objectClass": "Slime_coll",
-											"sid": 808905241591232,
+											"sid": 558300530980659,
 											"behaviorType": "Tween",
 											"parameters": {
 												"tags": "\"SlimeMoveRight\""
@@ -1958,7 +2074,7 @@
 										{
 											"id": "tween-value",
 											"objectClass": "Slime_coll",
-											"sid": 838645923776288,
+											"sid": 741157490168435,
 											"behaviorType": "Tween",
 											"parameters": {
 												"tags": "\"SlimeTimeToLeft\"",
@@ -1975,7 +2091,7 @@
 										{
 											"id": "stop-timer",
 											"objectClass": "Slime_coll",
-											"sid": 685361981621467,
+											"sid": 961745905755406,
 											"disabled": true,
 											"behaviorType": "Timer",
 											"parameters": {
@@ -1983,7 +2099,7 @@
 											}
 										}
 									],
-									"sid": 429053351803153
+									"sid": 920052413958066
 								},
 								{
 									"eventType": "block",
@@ -1991,7 +2107,7 @@
 										{
 											"id": "on-tweens-finished",
 											"objectClass": "Slime_coll",
-											"sid": 809438481143887,
+											"sid": 198093741351244,
 											"behaviorType": "Tween",
 											"parameters": {
 												"tags": "\"SlimeTimeToLeft\""
@@ -2002,7 +2118,7 @@
 										{
 											"id": "tween-value",
 											"objectClass": "Slime_coll",
-											"sid": 372370851727796,
+											"sid": 820943033027733,
 											"behaviorType": "Tween",
 											"parameters": {
 												"tags": "\"SlimeMoveLeft\"",
@@ -2019,7 +2135,7 @@
 										{
 											"id": "start-timer",
 											"objectClass": "Slime_coll",
-											"sid": 834807869580770,
+											"sid": 680988850055340,
 											"disabled": true,
 											"behaviorType": "Timer",
 											"parameters": {
@@ -2029,7 +2145,7 @@
 											}
 										}
 									],
-									"sid": 850324378798282
+									"sid": 381982304606940
 								},
 								{
 									"eventType": "block",
@@ -2037,7 +2153,7 @@
 										{
 											"id": "is-playing",
 											"objectClass": "Slime_coll",
-											"sid": 969871803084865,
+											"sid": 153518299654577,
 											"behaviorType": "Tween",
 											"parameters": {
 												"tags": "\"SlimeMoveLeft\""
@@ -2048,14 +2164,14 @@
 										{
 											"id": "simulate-control",
 											"objectClass": "Slime_coll",
-											"sid": 347278650687156,
+											"sid": 701071008764891,
 											"behaviorType": "Platform",
 											"parameters": {
 												"control": "left"
 											}
 										}
 									],
-									"sid": 803506314482108
+									"sid": 136420115756295
 								},
 								{
 									"eventType": "block",
@@ -2063,7 +2179,7 @@
 										{
 											"id": "on-tweens-finished",
 											"objectClass": "Slime_coll",
-											"sid": 668808977184090,
+											"sid": 690412873299079,
 											"behaviorType": "Tween",
 											"parameters": {
 												"tags": "\"SlimeMoveLeft\""
@@ -2074,7 +2190,7 @@
 										{
 											"id": "tween-value",
 											"objectClass": "Slime_coll",
-											"sid": 691019337239832,
+											"sid": 821508509140215,
 											"behaviorType": "Tween",
 											"parameters": {
 												"tags": "\"SlimeTimeToRight\"",
@@ -2089,15 +2205,15 @@
 											}
 										}
 									],
-									"sid": 693535359183668
+									"sid": 309462996813659
 								}
 							],
-							"sid": 667595451570229
+							"sid": 708065141263621
 						},
 						{
 							"eventType": "group",
 							"disabled": false,
-							"title": "Slime Chasing",
+							"title": "Slime Chasing3",
 							"description": "",
 							"isActiveOnStart": true,
 							"children": [
@@ -2107,7 +2223,7 @@
 										{
 											"id": "has-los-to-object",
 											"objectClass": "Slime_coll",
-											"sid": 767214564958563,
+											"sid": 619417306842395,
 											"behaviorType": "LineOfSight",
 											"parameters": {
 												"object": "player_coll",
@@ -2117,7 +2233,7 @@
 										{
 											"id": "is-timer-running",
 											"objectClass": "Slime_coll",
-											"sid": 751380997744941,
+											"sid": 207604684611371,
 											"behaviorType": "Timer",
 											"parameters": {
 												"tag": "\"SlimeAttackDelay\""
@@ -2126,7 +2242,7 @@
 										}
 									],
 									"actions": [],
-									"sid": 212024006326411,
+									"sid": 195337591377585,
 									"children": [
 										{
 											"eventType": "block",
@@ -2134,7 +2250,7 @@
 												{
 													"id": "compare-two-values",
 													"objectClass": "System",
-													"sid": 275128725861482,
+													"sid": 547213377767812,
 													"parameters": {
 														"first-value": "player_coll.X",
 														"comparison": 2,
@@ -2146,7 +2262,7 @@
 												{
 													"id": "tween-value",
 													"objectClass": "Slime_coll",
-													"sid": 400921871928414,
+													"sid": 847555722295389,
 													"behaviorType": "Tween",
 													"parameters": {
 														"tags": "\"SlimeAttLeft_1\"",
@@ -2163,13 +2279,13 @@
 												{
 													"id": "set-mirrored",
 													"objectClass": "Slime",
-													"sid": 812571279038157,
+													"sid": 132274996566362,
 													"parameters": {
 														"state": "not-mirrored"
 													}
 												}
 											],
-											"sid": 175900359051337
+											"sid": 286272516995562
 										},
 										{
 											"eventType": "block",
@@ -2177,7 +2293,7 @@
 												{
 													"id": "compare-two-values",
 													"objectClass": "System",
-													"sid": 823136779692386,
+													"sid": 420465766794747,
 													"parameters": {
 														"first-value": "player_coll.X",
 														"comparison": 4,
@@ -2189,7 +2305,7 @@
 												{
 													"id": "tween-value",
 													"objectClass": "Slime_coll",
-													"sid": 233096643049456,
+													"sid": 459501709756733,
 													"behaviorType": "Tween",
 													"parameters": {
 														"tags": "\"SlimeAttRight_1\"",
@@ -2206,13 +2322,13 @@
 												{
 													"id": "set-mirrored",
 													"objectClass": "Slime",
-													"sid": 237289714891528,
+													"sid": 458842985496983,
 													"parameters": {
 														"state": "mirrored"
 													}
 												}
 											],
-											"sid": 545423239868382
+											"sid": 290032217809973
 										}
 									]
 								},
@@ -2222,7 +2338,7 @@
 										{
 											"id": "is-playing",
 											"objectClass": "Slime_coll",
-											"sid": 210035186753380,
+											"sid": 996682544272408,
 											"behaviorType": "Tween",
 											"parameters": {
 												"tags": "\"SlimeAttLeft_1\""
@@ -2233,14 +2349,14 @@
 										{
 											"id": "simulate-control",
 											"objectClass": "Slime_coll",
-											"sid": 164868924160579,
+											"sid": 399209743796277,
 											"behaviorType": "Platform",
 											"parameters": {
 												"control": "left"
 											}
 										}
 									],
-									"sid": 389373192893595
+									"sid": 195305462884253
 								},
 								{
 									"eventType": "block",
@@ -2248,7 +2364,7 @@
 										{
 											"id": "is-playing",
 											"objectClass": "Slime_coll",
-											"sid": 104589642281415,
+											"sid": 461396056554115,
 											"behaviorType": "Tween",
 											"parameters": {
 												"tags": "\"SlimeAttRight_1\""
@@ -2259,22 +2375,22 @@
 										{
 											"id": "simulate-control",
 											"objectClass": "Slime_coll",
-											"sid": 480818158290214,
+											"sid": 680949380808385,
 											"behaviorType": "Platform",
 											"parameters": {
 												"control": "right"
 											}
 										}
 									],
-									"sid": 860769914424140
+									"sid": 918720730001875
 								}
 							],
-							"sid": 973674663573744
+							"sid": 454679825183839
 						},
 						{
 							"eventType": "group",
 							"disabled": false,
-							"title": "Knockback Slime",
+							"title": "Knockback Slime3",
 							"description": "",
 							"isActiveOnStart": true,
 							"children": [
@@ -2284,7 +2400,7 @@
 										{
 											"id": "on-collision-with-another-object",
 											"objectClass": "Slime_coll",
-											"sid": 542358663120003,
+											"sid": 581894080194176,
 											"parameters": {
 												"object": "player_coll"
 											}
@@ -2292,7 +2408,7 @@
 										{
 											"id": "is-playing",
 											"objectClass": "player_coll",
-											"sid": 281586647469171,
+											"sid": 417087108528725,
 											"behaviorType": "Tween",
 											"parameters": {
 												"tags": "\"SlimeAttCooldown\""
@@ -2304,7 +2420,7 @@
 										{
 											"id": "tween-value",
 											"objectClass": "player_coll",
-											"sid": 949228648147846,
+											"sid": 353851100525458,
 											"behaviorType": "Tween",
 											"parameters": {
 												"tags": "\"SlimeAttCooldown\"",
@@ -2321,7 +2437,7 @@
 										{
 											"id": "start-timer",
 											"objectClass": "Slime_coll",
-											"sid": 479772580298237,
+											"sid": 144532261811226,
 											"behaviorType": "Timer",
 											"parameters": {
 												"duration": "0.8",
@@ -2330,7 +2446,7 @@
 											}
 										}
 									],
-									"sid": 356811905934611,
+									"sid": 712432290872200,
 									"children": [
 										{
 											"eventType": "block",
@@ -2338,7 +2454,7 @@
 												{
 													"id": "compare-x",
 													"objectClass": "Slime_coll",
-													"sid": 371435561980223,
+													"sid": 369978431026400,
 													"parameters": {
 														"comparison": 2,
 														"x-co-ordinate": "player_coll.X"
@@ -2349,7 +2465,7 @@
 												{
 													"id": "set-jump-strength",
 													"objectClass": "player_coll",
-													"sid": 647241701528499,
+													"sid": 312565176073073,
 													"behaviorType": "Platform",
 													"parameters": {
 														"jump-strength": "knockbackjump"
@@ -2358,7 +2474,7 @@
 												{
 													"id": "simulate-control",
 													"objectClass": "player_coll",
-													"sid": 284672126478632,
+													"sid": 451546054791717,
 													"behaviorType": "Platform",
 													"parameters": {
 														"control": "jump"
@@ -2367,7 +2483,7 @@
 												{
 													"id": "tween-one-property",
 													"objectClass": "player_coll",
-													"sid": 747804684565565,
+													"sid": 235702448983748,
 													"behaviorType": "Tween",
 													"parameters": {
 														"tags": "\"knockback\"",
@@ -2382,7 +2498,7 @@
 													}
 												}
 											],
-											"sid": 714394976694352
+											"sid": 102855841870557
 										},
 										{
 											"eventType": "block",
@@ -2390,7 +2506,7 @@
 												{
 													"id": "compare-x",
 													"objectClass": "Slime_coll",
-													"sid": 552156356779066,
+													"sid": 194876252995169,
 													"parameters": {
 														"comparison": 4,
 														"x-co-ordinate": "player_coll.X"
@@ -2401,7 +2517,7 @@
 												{
 													"id": "set-jump-strength",
 													"objectClass": "player_coll",
-													"sid": 498317412564477,
+													"sid": 393339917467297,
 													"behaviorType": "Platform",
 													"parameters": {
 														"jump-strength": "knockbackjump"
@@ -2410,7 +2526,7 @@
 												{
 													"id": "simulate-control",
 													"objectClass": "player_coll",
-													"sid": 392174437719758,
+													"sid": 279148186391253,
 													"behaviorType": "Platform",
 													"parameters": {
 														"control": "jump"
@@ -2419,7 +2535,7 @@
 												{
 													"id": "tween-one-property",
 													"objectClass": "player_coll",
-													"sid": 489918470179627,
+													"sid": 966067158642456,
 													"behaviorType": "Tween",
 													"parameters": {
 														"tags": "\"knockback\"",
@@ -2434,20 +2550,20 @@
 													}
 												}
 											],
-											"sid": 883220362640404
+											"sid": 772546011596098
 										}
 									]
 								}
 							],
-							"sid": 305989030614201
+							"sid": 677484562087928
 						}
 					],
-					"sid": 824996844569903
+					"sid": 972247507307953
 				},
 				{
 					"eventType": "group",
 					"disabled": false,
-					"title": "Slime idle Behaviour ",
+					"title": "Slime idle Behaviour 2",
 					"description": "",
 					"isActiveOnStart": true,
 					"children": [
@@ -2457,7 +2573,7 @@
 								{
 									"id": "is-on-floor",
 									"objectClass": "Slime_coll_idle",
-									"sid": 248123064080367,
+									"sid": 449900770258107,
 									"behaviorType": "Platform"
 								}
 							],
@@ -2465,19 +2581,19 @@
 								{
 									"id": "simulate-control",
 									"objectClass": "Slime_coll_idle",
-									"sid": 318868934193812,
+									"sid": 748885861593311,
 									"behaviorType": "Platform",
 									"parameters": {
 										"control": "jump"
 									}
 								}
 							],
-							"sid": 801454715409587
+							"sid": 654721637317363
 						},
 						{
 							"eventType": "group",
 							"disabled": false,
-							"title": "Slime Chasing2",
+							"title": "Slime Chasing4",
 							"description": "",
 							"isActiveOnStart": true,
 							"children": [
@@ -2487,7 +2603,7 @@
 										{
 											"id": "has-los-to-object",
 											"objectClass": "Slime_coll_idle",
-											"sid": 954590188890804,
+											"sid": 151529319772972,
 											"behaviorType": "LineOfSight",
 											"parameters": {
 												"object": "player_coll",
@@ -2497,7 +2613,7 @@
 										{
 											"id": "is-timer-running",
 											"objectClass": "Slime_coll_idle",
-											"sid": 692669673146896,
+											"sid": 791050764844634,
 											"behaviorType": "Timer",
 											"parameters": {
 												"tag": "\"SlimeIdleAttackDelay\""
@@ -2506,7 +2622,7 @@
 										}
 									],
 									"actions": [],
-									"sid": 214450233129691,
+									"sid": 656638601938799,
 									"children": [
 										{
 											"eventType": "block",
@@ -2514,7 +2630,7 @@
 												{
 													"id": "compare-two-values",
 													"objectClass": "System",
-													"sid": 234596481711030,
+													"sid": 635707868365254,
 													"parameters": {
 														"first-value": "player_coll.X",
 														"comparison": 2,
@@ -2526,7 +2642,7 @@
 												{
 													"id": "tween-value",
 													"objectClass": "Slime_coll_idle",
-													"sid": 500396609193114,
+													"sid": 732408032503853,
 													"behaviorType": "Tween",
 													"parameters": {
 														"tags": "\"SlimeIdleAttLeft_1\"",
@@ -2543,13 +2659,13 @@
 												{
 													"id": "set-mirrored",
 													"objectClass": "Slime_idle",
-													"sid": 193851984915022,
+													"sid": 231865616808287,
 													"parameters": {
 														"state": "not-mirrored"
 													}
 												}
 											],
-											"sid": 577244486035330
+											"sid": 189619914957306
 										},
 										{
 											"eventType": "block",
@@ -2557,7 +2673,7 @@
 												{
 													"id": "compare-two-values",
 													"objectClass": "System",
-													"sid": 336341128542995,
+													"sid": 214739363083506,
 													"parameters": {
 														"first-value": "player_coll.X",
 														"comparison": 4,
@@ -2569,7 +2685,7 @@
 												{
 													"id": "tween-value",
 													"objectClass": "Slime_coll_idle",
-													"sid": 735239030923143,
+													"sid": 895847434923465,
 													"behaviorType": "Tween",
 													"parameters": {
 														"tags": "\"SlimeIdleAttRight_1\"",
@@ -2586,13 +2702,13 @@
 												{
 													"id": "set-mirrored",
 													"objectClass": "Slime_idle",
-													"sid": 722287665684836,
+													"sid": 491728963994589,
 													"parameters": {
 														"state": "mirrored"
 													}
 												}
 											],
-											"sid": 301695001037659
+											"sid": 771710938346697
 										}
 									]
 								},
@@ -2602,7 +2718,7 @@
 										{
 											"id": "is-playing",
 											"objectClass": "Slime_coll_idle",
-											"sid": 635060492276212,
+											"sid": 473218389029860,
 											"behaviorType": "Tween",
 											"parameters": {
 												"tags": "\"SlimeIdleAttLeft_1\""
@@ -2613,14 +2729,14 @@
 										{
 											"id": "simulate-control",
 											"objectClass": "Slime_coll_idle",
-											"sid": 693414564627497,
+											"sid": 412375381886589,
 											"behaviorType": "Platform",
 											"parameters": {
 												"control": "left"
 											}
 										}
 									],
-									"sid": 875260487209917
+									"sid": 329112453381426
 								},
 								{
 									"eventType": "block",
@@ -2628,7 +2744,7 @@
 										{
 											"id": "is-playing",
 											"objectClass": "Slime_coll_idle",
-											"sid": 761456025582466,
+											"sid": 591243295986635,
 											"behaviorType": "Tween",
 											"parameters": {
 												"tags": "\"SlimeIdleAttRight_1\""
@@ -2639,22 +2755,22 @@
 										{
 											"id": "simulate-control",
 											"objectClass": "Slime_coll_idle",
-											"sid": 657755529294307,
+											"sid": 141488054677349,
 											"behaviorType": "Platform",
 											"parameters": {
 												"control": "right"
 											}
 										}
 									],
-									"sid": 124589082661407
+									"sid": 183004218261448
 								}
 							],
-							"sid": 953847418026770
+							"sid": 910915500432786
 						},
 						{
 							"eventType": "group",
 							"disabled": false,
-							"title": "Knockback Slime2",
+							"title": "Knockback Slime4",
 							"description": "",
 							"isActiveOnStart": true,
 							"children": [
@@ -2664,7 +2780,7 @@
 										{
 											"id": "on-collision-with-another-object",
 											"objectClass": "Slime_coll_idle",
-											"sid": 982073240774262,
+											"sid": 403471435060359,
 											"parameters": {
 												"object": "player_coll"
 											}
@@ -2672,7 +2788,7 @@
 										{
 											"id": "is-playing",
 											"objectClass": "player_coll",
-											"sid": 813429842822939,
+											"sid": 535753296306225,
 											"behaviorType": "Tween",
 											"parameters": {
 												"tags": "\"SlimeIdleAttCooldown\""
@@ -2684,7 +2800,7 @@
 										{
 											"id": "tween-value",
 											"objectClass": "player_coll",
-											"sid": 381382391755088,
+											"sid": 985636112600739,
 											"behaviorType": "Tween",
 											"parameters": {
 												"tags": "\"SlimeIdleAttCooldown\"",
@@ -2701,7 +2817,7 @@
 										{
 											"id": "start-timer",
 											"objectClass": "Slime_coll_idle",
-											"sid": 905702481294190,
+											"sid": 317660710954695,
 											"behaviorType": "Timer",
 											"parameters": {
 												"duration": "0.8",
@@ -2710,7 +2826,7 @@
 											}
 										}
 									],
-									"sid": 176084485696383,
+									"sid": 973650866528313,
 									"children": [
 										{
 											"eventType": "block",
@@ -2718,7 +2834,7 @@
 												{
 													"id": "compare-x",
 													"objectClass": "Slime_coll_idle",
-													"sid": 868133495907799,
+													"sid": 158970604310739,
 													"parameters": {
 														"comparison": 2,
 														"x-co-ordinate": "player_coll.X"
@@ -2729,7 +2845,7 @@
 												{
 													"id": "set-jump-strength",
 													"objectClass": "player_coll",
-													"sid": 759711273013374,
+													"sid": 375126877819080,
 													"behaviorType": "Platform",
 													"parameters": {
 														"jump-strength": "knockbackjump"
@@ -2738,7 +2854,7 @@
 												{
 													"id": "simulate-control",
 													"objectClass": "player_coll",
-													"sid": 189019727132149,
+													"sid": 615110109662042,
 													"behaviorType": "Platform",
 													"parameters": {
 														"control": "jump"
@@ -2747,7 +2863,7 @@
 												{
 													"id": "tween-one-property",
 													"objectClass": "player_coll",
-													"sid": 318706506508978,
+													"sid": 139416928318755,
 													"behaviorType": "Tween",
 													"parameters": {
 														"tags": "\"knockback\"",
@@ -2762,7 +2878,7 @@
 													}
 												}
 											],
-											"sid": 304181896440301
+											"sid": 215079421650601
 										},
 										{
 											"eventType": "block",
@@ -2770,7 +2886,7 @@
 												{
 													"id": "compare-x",
 													"objectClass": "Slime_coll_idle",
-													"sid": 113822290793136,
+													"sid": 903927435870532,
 													"parameters": {
 														"comparison": 4,
 														"x-co-ordinate": "player_coll.X"
@@ -2781,7 +2897,7 @@
 												{
 													"id": "set-jump-strength",
 													"objectClass": "player_coll",
-													"sid": 167132665974708,
+													"sid": 936650700847179,
 													"behaviorType": "Platform",
 													"parameters": {
 														"jump-strength": "knockbackjump"
@@ -2790,7 +2906,7 @@
 												{
 													"id": "simulate-control",
 													"objectClass": "player_coll",
-													"sid": 688411490355570,
+													"sid": 652716200735305,
 													"behaviorType": "Platform",
 													"parameters": {
 														"control": "jump"
@@ -2799,7 +2915,7 @@
 												{
 													"id": "tween-one-property",
 													"objectClass": "player_coll",
-													"sid": 101989011353761,
+													"sid": 327037426104682,
 													"behaviorType": "Tween",
 													"parameters": {
 														"tags": "\"knockback\"",
@@ -2814,23 +2930,23 @@
 													}
 												}
 											],
-											"sid": 695630233968614
+											"sid": 968757771988750
 										}
 									]
 								}
 							],
-							"sid": 938869144963712
+							"sid": 272481860450241
 						}
 					],
-					"sid": 706693483105400
+					"sid": 705196039270190
 				}
 			],
-			"sid": 761389198976006
+			"sid": 911652395605379
 		},
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Enemy overlapping fix",
+			"title": "Enemy overlapping fix2",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -2840,7 +2956,7 @@
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "Slime_coll",
-							"sid": 760009257142219,
+							"sid": 493412737813302,
 							"parameters": {
 								"object": "Slime_coll_idle"
 							}
@@ -2850,14 +2966,14 @@
 						{
 							"id": "push-out-solid",
 							"objectClass": "Slime_coll",
-							"sid": 206014850882096,
+							"sid": 684145711579389,
 							"behaviorType": "Custom",
 							"parameters": {
 								"direction": "nearest"
 							}
 						}
 					],
-					"sid": 122889879358633
+					"sid": 354696051173393
 				},
 				{
 					"eventType": "block",
@@ -2865,7 +2981,7 @@
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "Slime_coll_idle",
-							"sid": 873125875537744,
+							"sid": 386494740935898,
 							"parameters": {
 								"object": "Slime_coll"
 							}
@@ -2875,17 +2991,17 @@
 						{
 							"id": "push-out-solid",
 							"objectClass": "Slime_coll_idle",
-							"sid": 515756668802120,
+							"sid": 947156828472667,
 							"behaviorType": "Custom",
 							"parameters": {
 								"direction": "nearest"
 							}
 						}
 					],
-					"sid": 436546850284306
+					"sid": 517956874938442
 				}
 			],
-			"sid": 174477644095179
+			"sid": 671206490660192
 		},
 		{
 			"eventType": "block",
@@ -2893,7 +3009,7 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "player_coll",
-					"sid": 916346198835246,
+					"sid": 346507076680482,
 					"parameters": {
 						"object": "TrapSlimeSensor"
 					}
@@ -2903,7 +3019,7 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 442876872505261,
+					"sid": 754748420077887,
 					"parameters": {
 						"object-to-create": "Slime_coll_idle",
 						"layer": "\"game\"",
@@ -2914,30 +3030,8 @@
 					}
 				}
 			],
-			"sid": 303870197469223
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 769146560704527
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "torch_fire",
-					"sid": 335444077996360,
-					"parameters": {
-						"animation": "\"Animation 1\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 772510829276182
+			"sid": 679122248602036
 		}
 	],
-	"sid": 240398765268806
+	"sid": 246192002752181
 }
