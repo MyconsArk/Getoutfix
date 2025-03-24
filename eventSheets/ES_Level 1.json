@@ -863,40 +863,146 @@
 							"sid": 501882135869463
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"id": "tween-value",
+							"objectClass": "flyng_tiles1",
+							"sid": 982983370284046,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"TimeToRight\"",
+								"start-value": "0",
+								"end-value": "1",
+								"time": "1.5",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
 					"sid": 130842988456535
 				},
 				{
 					"eventType": "block",
-					"conditions": [],
+					"conditions": [
+						{
+							"id": "is-playing",
+							"objectClass": "flyng_tiles1",
+							"sid": 467690113303885,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"TimeToRight\""
+							}
+						}
+					],
 					"actions": [
 						{
 							"id": "simulate-control",
 							"objectClass": "flyng_tiles1",
-							"sid": 264250307402903,
+							"sid": 156190908120549,
 							"behaviorType": "Platform",
 							"parameters": {
 								"control": "right"
 							}
 						}
 					],
-					"sid": 104639901721067
+					"sid": 908371650966688
 				},
 				{
 					"eventType": "block",
-					"conditions": [],
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "flyng_tiles1",
+							"sid": 732759212315812,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"TimeToRight\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-value",
+							"objectClass": "flyng_tiles1",
+							"sid": 106090813830977,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"TimeToLeft\"",
+								"start-value": "0",
+								"end-value": "1",
+								"time": "1.5",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 256890912920871
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-playing",
+							"objectClass": "flyng_tiles1",
+							"sid": 983014424794542,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"TimeToLeft\""
+							}
+						}
+					],
 					"actions": [
 						{
 							"id": "simulate-control",
 							"objectClass": "flyng_tiles1",
-							"sid": 677243839914839,
+							"sid": 743820858969849,
 							"behaviorType": "Platform",
 							"parameters": {
 								"control": "left"
 							}
 						}
 					],
-					"sid": 799671687197851
+					"sid": 160011375853338
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "flyng_tiles1",
+							"sid": 892512274848416,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"TimeToLeft\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-value",
+							"objectClass": "flyng_tiles1",
+							"sid": 128476484865111,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"TimeToRight\"",
+								"start-value": "0",
+								"end-value": "1",
+								"time": "1.5",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 466595146224449
 				}
 			],
 			"sid": 968918117263899
