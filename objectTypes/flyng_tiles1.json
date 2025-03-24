@@ -20,6 +20,11 @@
 			"behaviorId": "Sin",
 			"name": "Sine",
 			"sid": 754599925169812
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 589286157616195
 		}
 	],
 	"effectTypes": [],
