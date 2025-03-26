@@ -348,10 +348,10 @@
 						{
 							"id": "spawn-another-object",
 							"objectClass": "player",
-							"sid": 376426615600903,
+							"sid": 980617939295487,
 							"parameters": {
 								"object": "PlayerRightHit",
-								"layer": "4",
+								"layer": "\"game\"",
 								"image-point": "\"AttackHit\"",
 								"create-hierarchy": false,
 								"template-name": "\"\""
@@ -373,9 +373,9 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 959095696202801,
+							"sid": 685303091986219,
 							"parameters": {
-								"seconds": "0.1",
+								"seconds": "0.3",
 								"use-timescale": true
 							}
 						},
