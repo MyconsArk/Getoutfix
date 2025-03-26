@@ -22,6 +22,7 @@
 							"id": "is-animation-playing",
 							"objectClass": "player",
 							"sid": 820411426367173,
+							"disabled": true,
 							"parameters": {
 								"animation": "\"attack\""
 							},
@@ -125,6 +126,7 @@
 							"id": "is-playing",
 							"objectClass": "player_coll",
 							"sid": 878078019990285,
+							"disabled": true,
 							"behaviorType": "Tween",
 							"parameters": {
 								"tags": "\"knockback\""
@@ -168,6 +170,7 @@
 							"id": "is-playing",
 							"objectClass": "player_coll",
 							"sid": 155612471248971,
+							"disabled": true,
 							"behaviorType": "Tween",
 							"parameters": {
 								"tags": "\"knockback\""
@@ -211,6 +214,7 @@
 							"id": "is-playing",
 							"objectClass": "player_coll",
 							"sid": 595733886261476,
+							"disabled": true,
 							"behaviorType": "Tween",
 							"parameters": {
 								"tags": "\"knockback\""

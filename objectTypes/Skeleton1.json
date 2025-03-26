@@ -1,5 +1,5 @@
 {
-	"name": "Skeleton",
+	"name": "Skeleton1",
 	"plugin-id": "Sprite",
 	"sid": 677500483783616,
 	"isGlobal": false,
@@ -11,14 +11,23 @@
 			"desc": "",
 			"show": true,
 			"sid": 857840092260030
+		},
+		{
+			"name": "knockback",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 501190779969644
+		},
+		{
+			"name": "attack",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 689586701679118
 		}
 	],
 	"behaviorTypes": [
-		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 973159974998766
-		},
 		{
 			"behaviorId": "Flash",
 			"name": "Flash",
@@ -28,6 +37,31 @@
 			"behaviorId": "custom",
 			"name": "Custom",
 			"sid": 179461545330393
+		},
+		{
+			"behaviorId": "LOS",
+			"name": "LineOfSight",
+			"sid": 715464631708500
+		},
+		{
+			"behaviorId": "LOS",
+			"name": "LineOfSight2",
+			"sid": 585143383043079
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 264538435244806
+		},
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 928869582989347
+		},
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 390924057272555
 		}
 	],
 	"effectTypes": [],
@@ -47,13 +81,13 @@
 						"imageSpriteId": 2761713,
 						"collisionPoly": {
 							"points": [
-								0.31592039800995014,
-								0,
-								0.6442787587939203,
-								0,
-								0.6492535795145363,
+								0.4154231892296329,
+								0.5074626865671643,
+								0.5447759675742373,
+								0.4975125896396921,
+								0.5945273631840791,
 								1,
-								0.31592039800995014,
+								0.38059716675411986,
 								1
 							]
 						},
@@ -84,10 +118,10 @@
 						"imageSpriteId": 654814,
 						"collisionPoly": {
 							"points": [
-								0.31592039800995014,
-								0,
-								0.6442787587939203,
-								0,
+								0.4353233830845769,
+								0.5323381566289643,
+								0.5348258706467653,
+								0.5373134328358209,
 								0.6492535795145363,
 								1,
 								0.31592039800995014,
@@ -95,6 +129,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "AttackHit",
+								"x": 0.5074626865671642,
+								"y": 0.4651741293532338
+							}
+						],
 						"duration": 1,
 						"tag": ""
 					},
@@ -107,31 +148,44 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 267528,
+						"imageSpriteId": 2766162,
 						"collisionPoly": {
 							"points": [
-								0.31592039800995014,
-								0,
-								0.6442787587939203,
-								0,
-								0.6492535795145363,
+								0.47512468176694633,
+								0.3681590521513528,
+								0.6368160722267563,
+								0.4154228096577658,
 								1,
-								0.31592039800995014,
-								1
+								0.42910436374038,
+								1,
+								0.6200248946004838,
+								0.6405470359384713,
+								0.6309079696883017,
+								0.6343282063802079,
+								0.7860697276556671,
+								0.49005005490127457,
+								0.7462686567164178
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "AttackHit",
+								"x": 0.8208955223880597,
+								"y": 0.5099502487562189
+							}
+						],
 						"duration": 1,
 						"tag": ""
 					}
 				],
 				"sid": 211768791625777,
-				"name": "attack",
+				"name": "AttackSlime",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 1
 			}
 		],
 		"subfolders": []
