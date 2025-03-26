@@ -1,10 +1,10 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 42402,
+	"savedWithRelease": 43200,
 	"name": "New project",
 	"runtime": "c3",
 	"useWorker": "auto",
-	"bundleAddons": false,
+	"bundleAddons": true,
 	"usedAddons": [
 		{
 			"type": "plugin",
@@ -160,8 +160,8 @@
 			"flyng_tiles1",
 			"HP_Bar",
 			"TiledBackground",
-			"Skeleton",
-			"Skeleton_coll",
+			"Skeleton1",
+			"SkeletonHitBox",
 			"PlayerRightHit",
 			"flyng_tiles_idle",
 			"Marker",
@@ -177,7 +177,10 @@
 			"teleportwall",
 			"Gerbang2",
 			"torch_fire",
-			"Sprite"
+			"Sprite",
+			"TiledBackground5",
+			"Hit",
+			"HITT"
 		],
 		"subfolders": []
 	},
@@ -372,6 +375,6 @@
 		"uidAllocationMode": "increment"
 	},
 	"viewportWidth": 1920,
-	"viewportHeight": 1000,
+	"viewportHeight": 1120,
 	"firstLayout": "Main Menu"
 }
