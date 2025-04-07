@@ -1,22 +1,22 @@
 {
-	"name": "TiledBackground2",
+	"name": "Tiles_Batugaguna",
 	"plugin-id": "TiledBg",
-	"sid": 654662093802371,
+	"sid": 812225949285431,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 250,
-		"height": 250,
+		"width": 151,
+		"height": 83,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
 		"fileType": "image/png",
-		"imageSpriteId": 9650280,
+		"imageSpriteId": 631639,
 		"useCollisionPoly": true,
 		"tag": ""
 	}

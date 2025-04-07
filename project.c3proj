@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 43200,
+	"savedWithRelease": 43203,
 	"name": "New project",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -45,13 +45,6 @@
 			"type": "plugin",
 			"id": "TiledBg",
 			"name": "Tiled Background",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Tilemap",
-			"name": "Tilemap",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -142,7 +135,6 @@
 			"Mouse",
 			"background1",
 			"background2",
-			"Tilemap",
 			"tilesrock",
 			"Slime",
 			"player_coll",
@@ -159,28 +151,31 @@
 			"ulang",
 			"flyng_tiles1",
 			"HP_Bar",
-			"TiledBackground",
+			"Tiles_Batugaguna",
 			"Skeleton1",
-			"SkeletonHitBox",
+			"Sk1_coll",
 			"PlayerRightHit",
 			"flyng_tiles_idle",
-			"Marker",
-			"TiledBackground2",
+			"CP1",
 			"Slime_idle",
 			"Slime_coll_idle",
 			"flyng_tiles2",
 			"TrapSlimeSensor",
-			"TiledBackground3",
-			"TiledBackground4",
+			"Tiles_Hitam",
+			"Background_Intro",
 			"Gerbang",
-			"TiledBackground6",
+			"Gerbang3",
 			"teleportwall",
 			"Gerbang2",
 			"torch_fire",
 			"Sprite",
 			"TiledBackground5",
 			"Hit",
-			"HITT"
+			"HITT",
+			"apiCP",
+			"TiledBackground",
+			"Slime_coll_idle2",
+			"Slime_idle2"
 		],
 		"subfolders": []
 	},
@@ -375,6 +370,6 @@
 		"uidAllocationMode": "increment"
 	},
 	"viewportWidth": 1920,
-	"viewportHeight": 1120,
+	"viewportHeight": 990,
 	"firstLayout": "Main Menu"
 }

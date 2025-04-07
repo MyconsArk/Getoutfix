@@ -17,16 +17,6 @@
 							"sid": 391212249834083,
 							"behaviorType": "Platform",
 							"isInverted": true
-						},
-						{
-							"id": "is-animation-playing",
-							"objectClass": "player",
-							"sid": 820411426367173,
-							"disabled": true,
-							"parameters": {
-								"animation": "\"attack\""
-							},
-							"isInverted": true
 						}
 					],
 					"actions": [
@@ -121,17 +111,6 @@
 							"parameters": {
 								"key": 65
 							}
-						},
-						{
-							"id": "is-playing",
-							"objectClass": "player_coll",
-							"sid": 878078019990285,
-							"disabled": true,
-							"behaviorType": "Tween",
-							"parameters": {
-								"tags": "\"knockback\""
-							},
-							"isInverted": true
 						}
 					],
 					"actions": [
@@ -165,17 +144,6 @@
 							"parameters": {
 								"key": 68
 							}
-						},
-						{
-							"id": "is-playing",
-							"objectClass": "player_coll",
-							"sid": 155612471248971,
-							"disabled": true,
-							"behaviorType": "Tween",
-							"parameters": {
-								"tags": "\"knockback\""
-							},
-							"isInverted": true
 						}
 					],
 					"actions": [
@@ -209,17 +177,6 @@
 							"parameters": {
 								"key": 87
 							}
-						},
-						{
-							"id": "is-playing",
-							"objectClass": "player_coll",
-							"sid": 595733886261476,
-							"disabled": true,
-							"behaviorType": "Tween",
-							"parameters": {
-								"tags": "\"knockback\""
-							},
-							"isInverted": true
 						}
 					],
 					"actions": [
@@ -243,50 +200,6 @@
 						}
 					],
 					"sid": 627841412940590
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 551441802691041,
-							"parameters": {
-								"key": 69
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "player",
-							"sid": 640878436655393,
-							"parameters": {
-								"animation": "\"attack\"",
-								"from": "current-frame"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 372326878062819,
-							"parameters": {
-								"seconds": "0.2",
-								"use-timescale": true
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "player",
-							"sid": 456352965446511,
-							"parameters": {
-								"animation": "\"stand\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 419232433595990,
-					"disabled": true
 				}
 			],
 			"sid": 538966378682271
