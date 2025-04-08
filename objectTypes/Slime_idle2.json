@@ -1,7 +1,7 @@
 {
 	"name": "Slime_idle2",
 	"plugin-id": "Sprite",
-	"sid": 864809065950949,
+	"sid": 950138884549058,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -9,12 +9,12 @@
 		{
 			"behaviorId": "scrollto",
 			"name": "ScrollTo",
-			"sid": 992563389397557
+			"sid": 805827383012536
 		},
 		{
 			"behaviorId": "Flash",
 			"name": "Flash",
-			"sid": 561759656177063
+			"sid": 932516756848322
 		}
 	],
 	"effectTypes": [],
@@ -31,7 +31,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4876908,
+						"imageSpriteId": 3457582,
 						"collisionPoly": {
 							"points": [
 								0.3247232472324723,
@@ -55,7 +55,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 719927204480732,
+				"sid": 783072680925008,
 				"name": "Idle",
 				"isLooping": false,
 				"isPingPong": false,
@@ -74,7 +74,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2926215,
+						"imageSpriteId": 9847737,
 						"collisionPoly": {
 							"points": [
 								0.3247232472324723,
@@ -106,7 +106,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3415077,
+						"imageSpriteId": 6020117,
 						"collisionPoly": {
 							"points": [
 								0.3872901678657074,
@@ -142,7 +142,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8503322,
+						"imageSpriteId": 7598006,
 						"collisionPoly": {
 							"points": [
 								0.3247232472324723,
@@ -166,7 +166,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 148313227351081,
+				"sid": 329115126469245,
 				"name": "Attack",
 				"isLooping": true,
 				"isPingPong": false,

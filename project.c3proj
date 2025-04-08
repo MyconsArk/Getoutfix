@@ -172,6 +172,13 @@
 			"TiledBackground5",
 			"Hit",
 			"HITT",
+			"TiledBackground7",
+			"TiledBackground8",
+			"TiledBackground9",
+			"Trap_Lvl3",
+			"TiledBackground10",
+			"TiledBackground11",
+			"TiledBackground12",
 			"apiCP",
 			"TiledBackground",
 			"Slime_coll_idle2",
@@ -190,7 +197,8 @@
 			"Level 1",
 			"Main Menu",
 			"Level 2",
-			"Intro"
+			"Intro",
+			"Level 3"
 		],
 		"subfolders": []
 	},
@@ -199,7 +207,8 @@
 			"ES_Level 1",
 			"ES_Main Menu",
 			"ES_Level 2",
-			"ES_Intro"
+			"ES_Intro",
+			"ES_Level 3"
 		],
 		"subfolders": []
 	},
@@ -362,7 +371,7 @@
 		"zNear": 1,
 		"zFar": 10000,
 		"maxSpriteSheetSize": 2048,
-		"loaderStyle": "splash",
+		"loaderStyle": "progress",
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https",
@@ -370,6 +379,6 @@
 		"uidAllocationMode": "increment"
 	},
 	"viewportWidth": 1920,
-	"viewportHeight": 990,
+	"viewportHeight": 996,
 	"firstLayout": "Main Menu"
 }
