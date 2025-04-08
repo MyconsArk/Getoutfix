@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 43200,
+	"savedWithRelease": 43203,
 	"name": "New project",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -180,7 +180,16 @@
 			"Sprite",
 			"TiledBackground5",
 			"Hit",
-			"HITT"
+			"HITT",
+			"TiledBackground7",
+			"TiledBackground8",
+			"TiledBackground9",
+			"Trap_Lvl3",
+			"TiledBackground10",
+			"TiledBackground11",
+			"TiledBackground12",
+			"Slime_coll_idle2",
+			"Slime_idle2"
 		],
 		"subfolders": []
 	},
@@ -195,7 +204,8 @@
 			"Level 1",
 			"Main Menu",
 			"Level 2",
-			"Intro"
+			"Intro",
+			"Level 3"
 		],
 		"subfolders": []
 	},
@@ -204,7 +214,8 @@
 			"ES_Level 1",
 			"ES_Main Menu",
 			"ES_Level 2",
-			"ES_Intro"
+			"ES_Intro",
+			"ES_Level 3"
 		],
 		"subfolders": []
 	},
@@ -367,7 +378,7 @@
 		"zNear": 1,
 		"zFar": 10000,
 		"maxSpriteSheetSize": 2048,
-		"loaderStyle": "splash",
+		"loaderStyle": "progress",
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https",
@@ -375,6 +386,6 @@
 		"uidAllocationMode": "increment"
 	},
 	"viewportWidth": 1920,
-	"viewportHeight": 1120,
+	"viewportHeight": 996,
 	"firstLayout": "Main Menu"
 }
